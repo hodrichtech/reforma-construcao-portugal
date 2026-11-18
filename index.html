@@ -1,0 +1,2810 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lusitana Obras &amp; Remodelações 🇵🇹 | Construção Civil &amp; Reabilitação Urbana em Portugal</title>
+  <meta name="description" content="Empresa de remodelações de interiores, construção civil e reabilitação urbana em Portugal (Lisboa, Porto, Cascais e Algarve). Alvará IMPIC, garantia legal de obra e simulador interativo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <style>
+    :root {
+      --bg-dark: #070a12;
+      --bg-surface: #0f172a;
+      --bg-card: rgba(15, 23, 42, 0.85);
+      --bg-card-hover: rgba(30, 41, 59, 0.95);
+      --border-color: rgba(212, 175, 55, 0.22);
+      --border-glow: rgba(212, 175, 55, 0.45);
+      --primary: #d4af37;
+      --primary-hover: #e5c158;
+      --primary-dark: #aa861c;
+      --accent: #f59e0b;
+      --accent-blue: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --success: #10b981;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --shadow-luxo: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.08);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      selection-background-color: var(--primary);
+      selection-color: #000;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Trust Ribbon */
+    .top-ribbon {
+      background: linear-gradient(90deg, #09101d, #141f36, #09101d);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+      padding: 7px 20px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .top-ribbon-items {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+    .top-ribbon-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .top-ribbon-item i {
+      color: var(--primary);
+    }
+    .top-ribbon-phone {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .top-ribbon-phone:hover {
+      color: var(--primary);
+    }
+
+    /* Header & Sticky Nav */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 10, 18, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.25rem;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+    }
+    .brand-text h1 {
+      font-family: var(--font-serif);
+      font-size: 1.28rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+    }
+    .brand-text h1 span {
+      color: var(--primary);
+    }
+    .brand-text p {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    /* Nav Links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.25s ease;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Nav Actions & Language Switcher */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 30px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 5px 11px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 20px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+    }
+    .lang-btn:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #070a12;
+      box-shadow: 0 2px 8px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-header-cta {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #070a12;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 10px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    }
+    .btn-header-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+      filter: brightness(1.08);
+    }
+
+    /* Mobile toggle */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-main);
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      padding: 90px 24px 75px;
+      background: radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.08) 0%, rgba(7, 10, 18, 0.98) 70%),
+                  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800') center/cover no-repeat;
+      overflow: hidden;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7, 10, 18, 0.82) 0%, rgba(7, 10, 18, 0.96) 100%);
+      backdrop-filter: blur(2px);
+    }
+    .hero-container {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--border-glow);
+      color: var(--primary);
+      padding: 7px 18px;
+      border-radius: 30px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin-bottom: 24px;
+      backdrop-filter: blur(8px);
+      animation: pulseGlow 3s infinite alternate;
+    }
+    @keyframes pulseGlow {
+      from { box-shadow: 0 0 10px rgba(212, 175, 55, 0.15); }
+      to { box-shadow: 0 0 22px rgba(212, 175, 55, 0.35); }
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 3.4rem;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      max-width: 980px;
+      margin: 0 auto 20px;
+      color: #fff;
+    }
+    .hero-title em {
+      font-style: normal;
+      background: linear-gradient(135deg, #fff 20%, var(--primary) 70%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-subtitle {
+      font-size: 1.16rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      margin: 0 auto 34px;
+      line-height: 1.65;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .btn-hero-primary {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #070a12;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 16px 34px;
+      border-radius: 35px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    }
+    .btn-hero-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 40px rgba(212, 175, 55, 0.45);
+      filter: brightness(1.08);
+    }
+    .btn-hero-whatsapp {
+      background: rgba(37, 211, 102, 0.12);
+      border: 1px solid rgba(37, 211, 102, 0.4);
+      color: #25d366;
+      font-weight: 600;
+      font-size: 1.02rem;
+      padding: 15px 28px;
+      border-radius: 35px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+      backdrop-filter: blur(8px);
+    }
+    .btn-hero-whatsapp:hover {
+      background: #25d366;
+      color: #070a12;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.35);
+    }
+
+    /* Metrics Bar */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1040px;
+      margin: 0 auto;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px 30px;
+      backdrop-filter: blur(12px);
+    }
+    .metric-card {
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 0 10px;
+    }
+    .metric-card:last-child {
+      border-right: none;
+    }
+    .metric-num {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .metric-label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
+
+    /* Common Section Styles */
+    section.content-section {
+      padding: 95px 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 55px;
+    }
+    .section-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 12px;
+      padding: 5px 14px;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+    }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.22;
+      color: #fff;
+    }
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-luxo);
+      background: var(--bg-card-hover);
+    }
+    .service-img-wrapper {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+    .service-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .service-card:hover .service-img {
+      transform: scale(1.06);
+    }
+    .service-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(7, 10, 18, 0.85);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+    }
+    .service-body {
+      padding: 24px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .service-icon {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 14px;
+    }
+    .service-title {
+      font-family: var(--font-serif);
+      font-size: 1.32rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .service-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.58;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+    .service-bullets {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .service-bullets li {
+      font-size: 0.84rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .service-bullets li i {
+      color: var(--success);
+      font-size: 0.8rem;
+    }
+    .service-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+      margin-top: auto;
+    }
+    .service-link:hover {
+      color: var(--accent);
+      gap: 9px;
+    }
+
+    /* ARU / Tax Benefit Callout Section */
+    .aru-banner {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(15, 23, 42, 0.9));
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      margin: 30px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .aru-content h3 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .aru-content h3 span {
+      color: var(--success);
+    }
+    .aru-content p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 680px;
+    }
+    .aru-badge-box {
+      text-align: center;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px dashed var(--success);
+      border-radius: var(--radius-md);
+      padding: 16px 26px;
+    }
+    .aru-badge-num {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--success);
+      line-height: 1;
+    }
+    .aru-badge-sub {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Cost Simulator Section */
+    .simulator-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-luxo);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .sim-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .sim-field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .sim-label {
+      font-weight: 600;
+      font-size: 0.94rem;
+      color: var(--text-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sim-label-val {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .sim-radio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .sim-radio-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sim-radio-card:hover {
+      border-color: var(--primary);
+      background: rgba(212, 175, 55, 0.06);
+    }
+    .sim-radio-card.active {
+      border-color: var(--primary);
+      background: rgba(212, 175, 55, 0.12);
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.2);
+    }
+    .sim-radio-card i {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+    .sim-radio-info strong {
+      display: block;
+      font-size: 0.88rem;
+      color: #fff;
+    }
+    .sim-radio-info small {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+    }
+
+    /* Slider styling */
+    .slider-range {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 8px;
+      border-radius: 5px;
+      background: #1e293b;
+      outline: none;
+      transition: opacity 0.2s;
+    }
+    .slider-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--primary);
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+      border: 2px solid #070a12;
+    }
+
+    /* Simulator Result Card */
+    .sim-result-card {
+      background: linear-gradient(145deg, #0f172a, #131d33);
+      border: 1px solid var(--border-glow);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .sim-result-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+    .sim-result-tag {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .sim-result-price {
+      font-family: var(--font-serif);
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+    }
+    .sim-result-price span {
+      color: var(--primary);
+      font-size: 1.6rem;
+    }
+    .sim-result-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      text-align: left;
+    }
+    .sim-detail-item span {
+      display: block;
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .sim-detail-item strong {
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    .sim-cta-btn {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #070a12;
+      font-weight: 700;
+      font-size: 0.98rem;
+      padding: 14px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: var(--transition);
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.3);
+    }
+    .sim-cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+    }
+    .sim-whatsapp-btn {
+      background: rgba(37, 211, 102, 0.12);
+      border: 1px solid rgba(37, 211, 102, 0.4);
+      color: #25d366;
+      font-weight: 600;
+      font-size: 0.92rem;
+      padding: 12px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+    .sim-whatsapp-btn:hover {
+      background: #25d366;
+      color: #070a12;
+    }
+
+    /* Before & After Portfolio */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+    .portfolio-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-luxo);
+    }
+    .portfolio-img-box {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+    }
+    .portfolio-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .portfolio-card:hover .portfolio-img {
+      transform: scale(1.05);
+    }
+    .portfolio-tag {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(7, 10, 18, 0.88);
+      border: 1px solid var(--border-glow);
+      color: #fff;
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+    }
+    .portfolio-body {
+      padding: 20px;
+    }
+    .portfolio-location {
+      font-size: 0.78rem;
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .portfolio-title {
+      font-family: var(--font-serif);
+      font-size: 1.22rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .portfolio-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+
+    /* Trust & Guarantees (IMPIC, etc.) */
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+    .trust-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 30px 22px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .trust-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      background: var(--bg-card-hover);
+    }
+    .trust-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 18px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--border-glow);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+    .trust-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .trust-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Testimonials (Trilingual Showcase) */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 32px 26px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 15px;
+      right: 22px;
+      font-family: var(--font-serif);
+      font-size: 4rem;
+      color: rgba(212, 175, 55, 0.15);
+      line-height: 1;
+    }
+    .testimonial-stars {
+      color: var(--primary);
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+    }
+    .testimonial-quote {
+      color: var(--text-main);
+      font-size: 0.94rem;
+      font-style: italic;
+      line-height: 1.65;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 16px;
+    }
+    .author-flag {
+      font-size: 1.5rem;
+    }
+    .author-info strong {
+      display: block;
+      font-size: 0.92rem;
+      color: #fff;
+    }
+    .author-info small {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+    }
+
+    /* Technical FAQ */
+    .faq-container {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .faq-item:hover {
+      border-color: var(--primary);
+    }
+    .faq-question {
+      padding: 20px 24px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      user-select: none;
+    }
+    .faq-question i {
+      color: var(--primary);
+      transition: transform 0.3s ease;
+    }
+    .faq-item.open .faq-question i {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 24px 20px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      display: none;
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    /* Contact & Form Section */
+    .contact-wrapper {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 45px;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 45px;
+      box-shadow: var(--shadow-luxo);
+    }
+    .contact-info-side {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .contact-info-side h3 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: #fff;
+    }
+    .contact-info-side p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .contact-card-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .contact-card-item i {
+      color: var(--primary);
+      font-size: 1.25rem;
+      width: 28px;
+      text-align: center;
+    }
+    .contact-card-item strong {
+      display: block;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+    .contact-card-item span {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .form-control {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.25);
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .form-btn-submit {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #070a12;
+      border: none;
+      padding: 14px 24px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      border-radius: 30px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: var(--transition);
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.3);
+      margin-top: 6px;
+    }
+    .form-btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+    }
+
+    /* Payment & Standards Bar */
+    .payments-strip {
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      background: rgba(15, 23, 42, 0.5);
+      padding: 24px 20px;
+      margin-top: 70px;
+      text-align: center;
+    }
+    .payments-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .payment-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    .payment-pill i {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: #04060b;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 60px 24px 30px;
+      font-size: 0.88rem;
+      color: var(--text-dim);
+    }
+    .footer-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-col h4 {
+      color: #fff;
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+    .footer-col p {
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.8rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25d366;
+      color: #070a12;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+      z-index: 999;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1) rotate(6deg);
+      box-shadow: 0 10px 32px rgba(37, 211, 102, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-title { font-size: 2.6rem; }
+      .services-grid, .portfolio-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .metrics-grid, .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .simulator-box, .contact-wrapper { grid-template-columns: 1fr; }
+      .footer-container { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .top-ribbon { justify-content: center; text-align: center; }
+      .top-ribbon-items { display: none; }
+      .nav-links { display: none; }
+      .mobile-menu-btn { display: block; }
+      .hero-title { font-size: 2.1rem; }
+      .hero-subtitle { font-size: 1rem; }
+      .services-grid, .portfolio-grid, .testimonials-grid, .trust-grid { grid-template-columns: 1fr; }
+      .metrics-grid { grid-template-columns: 1fr; }
+      .metric-card { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 12px; }
+      .sim-radio-grid, .form-row { grid-template-columns: 1fr; }
+      .footer-container { grid-template-columns: 1fr; }
+      .btn-header-cta span { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Trust Ribbon -->
+  <div class="top-ribbon">
+    <div class="top-ribbon-items">
+      <span class="top-ribbon-item">
+        <i class="fa-solid fa-stamp"></i>
+        <span data-i18n="ribbon_alvara">Alvará de Construção IMPIC N.º 98452-PAR</span>
+      </span>
+      <span class="top-ribbon-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span data-i18n="ribbon_seguro">Seguro Responsabilidade Civil 500.000 €</span>
+      </span>
+      <span class="top-ribbon-item">
+        <i class="fa-solid fa-file-contract"></i>
+        <span data-i18n="ribbon_garantia">Garantia Decenal 10 Anos (DL 84/2021)</span>
+      </span>
+    </div>
+    <div>
+      <a href="tel:+351912345678" class="top-ribbon-phone">
+        <i class="fa-solid fa-phone"></i>
+        <span>+351 912 345 678</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header & Sticky Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-compass-drafting"></i>
+        </div>
+        <div class="brand-text">
+          <h1>LUSITANA <span>OBRAS</span></h1>
+          <p data-i18n="brand_slogan">Construção &amp; Remodelações em Portugal</p>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#servicos" class="active" data-i18n="nav_servicos">Serviços</a></li>
+        <li><a href="#reabilitacao" data-i18n="nav_reabilitacao">Reabilitação &amp; ARU</a></li>
+        <li><a href="#simulador" data-i18n="nav_simulador">Simulador m²</a></li>
+        <li><a href="#portfolio" data-i18n="nav_portfolio">Portefólio</a></li>
+        <li><a href="#garantias" data-i18n="nav_garantias">Alvará &amp; Garantia</a></li>
+        <li><a href="#faq" data-i18n="nav_faq">Perguntas Frequentes</a></li>
+        <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Trilingual Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Language Selector">
+          <button class="lang-btn" data-lang="pt-BR" onclick="setLanguage('pt-BR')" title="Português do Brasil">
+            <span>🇧🇷</span> PT-BR
+          </button>
+          <button class="lang-btn active" data-lang="pt-PT" onclick="setLanguage('pt-PT')" title="Português de Portugal">
+            <span>🇵🇹</span> PT-PT
+          </button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')" title="English">
+            <span>🇬🇧</span> EN
+          </button>
+        </div>
+
+        <a href="#simulador" class="btn-header-cta">
+          <i class="fa-solid fa-calculator"></i>
+          <span data-i18n="btn_orcamento_header">Pedir Orçamento</span>
+        </a>
+
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <i class="fa-solid fa-certificate"></i>
+        <span data-i18n="hero_badge">🇵🇹 Construtora Certificada • Obras Chave na Mão em Portugal</span>
+      </div>
+
+      <h2 class="hero-title">
+        <span data-i18n="hero_title_p1">Remodelações de Interiores e</span><br>
+        <em data-i18n="hero_title_highlight">Construção Civil Chave na Mão</em><br>
+        <span data-i18n="hero_title_p2">em Portugal</span>
+      </h2>
+
+      <p class="hero-subtitle" data-i18n="hero_subtitle">
+        Transformamos apartamentos, moradias e edifícios históricos em Lisboa, Porto, Cascais e Algarve. Gestão integral de projeto, alvará IMPIC, assessoria completa para investidores e cumprimento escrupuloso de prazos e orçamentos.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#simulador" class="btn-hero-primary">
+          <i class="fa-solid fa-calculator"></i>
+          <span data-i18n="hero_cta_simular">Simular Custo da Minha Obra</span>
+        </a>
+        <a href="https://wa.me/+351912345678?text=Ola!%20Gostaria%20de%20solicitar%20um%20orcamento%20para%20uma%20obra%20em%20Portugal." target="_blank" class="btn-hero-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span data-i18n="hero_cta_whatsapp">Falar com Engenheiro no WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Metrics Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-num">180+</div>
+          <div class="metric-label" data-i18n="metric_obras">Obras Concluídas</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">100%</div>
+          <div class="metric-label" data-i18n="metric_prazos">Prazos Rigorosos</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">10 Anos</div>
+          <div class="metric-label" data-i18n="metric_garantia">Garantia Estrutural</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">6% IVA</div>
+          <div class="metric-label" data-i18n="metric_iva">Taxa Reduzida ARU</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid Section -->
+  <section id="servicos" class="content-section">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="servicos_tag">Especialidades Técnicas</span>
+      <h3 class="section-title" data-i18n="servicos_title">Soluções Completas de Engenharia &amp; Arquitetura</h3>
+      <p class="section-subtitle" data-i18n="servicos_subtitle">
+        Equipas próprias multidisciplinares em Lisboa, Porto, Cascais e Algarve. Da demolição inicial aos acabamentos nobres com supervisão técnica permanente.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Card 1: Remodelação de Interiores -->
+      <div class="service-card">
+        <div class="service-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600" alt="Remodelação de Interiores" class="service-img">
+          <span class="service-badge" data-i18n="badge_alta_procura">Mais Procurado</span>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fa-solid fa-bath"></i></div>
+          <h4 class="service-title" data-i18n="svc1_title">Remodelação Total de Interiores</h4>
+          <p class="service-desc" data-i18n="svc1_desc">
+            Casas de banho modernas, cozinhas por medida com ilha, remodelação de canalizações multicamada, rede elétrica certificada CERTIEL e chão flutuante/vinílico.
+          </p>
+          <ul class="service-bullets">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc1_b1">Casas de Banho &amp; Sanitários Suspensos</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc1_b2">Cozinhas Planeadas com Eletrodomésticos</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc1_b3">Iluminação LED &amp; Tetos Falsos com Sancas</span></li>
+          </ul>
+          <a href="#simulador" class="service-link"><span data-i18n="btn_simular_servico">Simular este Serviço</span> <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 2: Reabilitação Urbana ARU -->
+      <div class="service-card">
+        <div class="service-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600" alt="Reabilitação Urbana" class="service-img">
+          <span class="service-badge" style="color:var(--success); border-color:var(--success);" data-i18n="badge_iva_6">IVA a 6%</span>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fa-solid fa-monument"></i></div>
+          <h4 class="service-title" data-i18n="svc2_title">Reabilitação de Prédios Históricos</h4>
+          <p class="service-desc" data-i18n="svc2_desc">
+            Restauro de edifícios antigos em Lisboa (Baixa, Alfama, Chiado) e Porto (Cedofeita, Baixa). Recuperação de fachadas, azulejos, tabique e gaiola pombalina com IVA a 6%.
+          </p>
+          <ul class="service-bullets">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc2_b1">Enquadramento Fiscal ARU (Taxa Reduzida)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc2_b2">Reforço Estrutural Metálico &amp; Madeira</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc2_b3">Restauro Fiel de Elementos Históricos</span></li>
+          </ul>
+          <a href="#reabilitacao" class="service-link"><span data-i18n="btn_saber_mais">Saber mais sobre ARU</span> <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 3: Isolamento Térmico Capoto -->
+      <div class="service-card">
+        <div class="service-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186156f?w=600" alt="Isolamento Térmico Capoto ETICS" class="service-img">
+          <span class="service-badge" data-i18n="badge_classe_a">Eficiência A+</span>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+          <h4 class="service-title" data-i18n="svc3_title">Isolamento Térmico &amp; Capoto (ETICS)</h4>
+          <p class="service-desc" data-i18n="svc3_desc">
+            Aplicação de sistema ETICS (Capoto) em fachadas, caixilharia de PVC ou alumínio com corte térmico e vidros duplos Guardian Sun. Eliminação de humidades e pontes térmicas.
+          </p>
+          <ul class="service-bullets">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc3_b1">Capoto EPS/Lã de Rocha 60mm a 100mm</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc3_b2">Redução de até 60% na Conta Energética</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc3_b3">Garantia Contra Humidade por Condensação</span></li>
+          </ul>
+          <a href="#simulador" class="service-link"><span data-i18n="btn_simular_servico">Simular este Serviço</span> <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 4: Construção Chave na Mão -->
+      <div class="service-card">
+        <div class="service-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600" alt="Construção Chave na Mão" class="service-img">
+          <span class="service-badge" data-i18n="badge_turnkey">Turnkey 100%</span>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fa-solid fa-key"></i></div>
+          <h4 class="service-title" data-i18n="svc4_title">Construção de Moradias Chave na Mão</h4>
+          <p class="service-desc" data-i18n="svc4_desc">
+            Do projeto de arquitetura e licenciamento camarário à escavação, estrutura de betão armado e acabamentos de luxo em Cascais, Sintra, Oeiras e Algarve.
+          </p>
+          <ul class="service-bullets">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc4_b1">Projeto de Arquitetura &amp; Especialidades</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc4_b2">Licenciamento na Câmara Municipal</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc4_b3">Piscina, Jardins e Domótica Integrada</span></li>
+          </ul>
+          <a href="#simulador" class="service-link"><span data-i18n="btn_simular_servico">Simular este Serviço</span> <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 5: Pinturas & Coberturas -->
+      <div class="service-card">
+        <div class="service-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600" alt="Pintura e Impermeabilização" class="service-img">
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fa-solid fa-paint-roller"></i></div>
+          <h4 class="service-title" data-i18n="svc5_title">Impermeabilizações &amp; Coberturas</h4>
+          <p class="service-desc" data-i18n="svc5_desc">
+            Impermeabilização de terraços com telas asfálticas ou membranas líquidas de poliuretano, reparação de telhados e pinturas exteriores de alta durabilidade (Cin / Robbialac).
+          </p>
+          <ul class="service-bullets">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc5_b1">Teste de Estanquidade com Garantia</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc5_b2">Tintas Hidrofugantes e Antifungos</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc5_b3">Lavagem Mecânica e Selagem de Fissuras</span></li>
+          </ul>
+          <a href="#simulador" class="service-link"><span data-i18n="btn_simular_servico">Simular este Serviço</span> <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Card 6: Gestão para Investidores Estrangeiros -->
+      <div class="service-card">
+        <div class="service-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Gestão de Obras para Investidores" class="service-img">
+          <span class="service-badge" style="color:var(--accent-blue); border-color:var(--accent-blue);" data-i18n="badge_investidores">Para Não Residentes</span>
+        </div>
+        <div class="service-body">
+          <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+          <h4 class="service-title" data-i18n="svc6_title">Gestão Remota para Investidores</h4>
+          <p class="service-desc" data-i18n="svc6_desc">
+            Acompanhamento completo de obra para investidores brasileiros e internacionais. Relatórios em vídeo semanais, portal online, fiscalização independente e controlo de custos.
+          </p>
+          <ul class="service-bullets">
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc6_b1">Relatórios Semanais em Vídeo e Fotos 360°</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc6_b2">Atendimento Trilingue (PT, BR, EN)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-i18n="svc6_b3">Pagamentos Escalonados por Metas Físicas</span></li>
+          </ul>
+          <a href="#contacto" class="service-link"><span data-i18n="btn_falar_consultor">Falar com Consultor</span> <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARU Tax Benefit Callout -->
+    <div id="reabilitacao" class="aru-banner">
+      <div class="aru-content">
+        <h3><i class="fa-solid fa-percent" style="color:var(--success); margin-right:10px;"></i> <span data-i18n="aru_title">Poupança Fiscal: IVA Reduzido a 6% em Obras ARU</span></h3>
+        <p data-i18n="aru_desc">
+          Sabia que em Portugal as obras de reabilitação urbana em edifícios localizados em Áreas de Reabilitação Urbana (ARU) de Lisboa, Porto, Cascais e Sintra beneficiam da <strong>taxa reduzida de IVA a 6%</strong> (em vez dos 23% habituais)? A Lusitana instrui todo o processo técnico e documental junto da autarquia para garantir o seu benefício fiscal.
+        </p>
+      </div>
+      <div class="aru-badge-box">
+        <div class="aru-badge-num">6%</div>
+        <div class="aru-badge-sub" data-i18n="aru_taxa_sub">Taxa Reduzida de IVA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cost Simulator Section -->
+  <section id="simulador" class="content-section" style="background: rgba(15, 23, 42, 0.4); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="sim_tag">Transparência Total</span>
+      <h3 class="section-title" data-i18n="sim_title">Simulador de Custos de Remodelação em Portugal</h3>
+      <p class="section-subtitle" data-i18n="sim_subtitle">
+        Obtenha uma estimativa instantânea e rigorosa para a sua obra de acordo com as tabelas de preços praticadas no mercado português atualizado a 2026.
+      </p>
+    </div>
+
+    <div class="simulator-box">
+      <!-- Controls -->
+      <div class="sim-controls">
+        <!-- 1. Tipo de Intervenção -->
+        <div class="sim-field-group">
+          <label class="sim-label">
+            <span data-i18n="sim_lbl_tipo">1. Tipo de Intervenção:</span>
+          </label>
+          <div class="sim-radio-grid">
+            <div class="sim-radio-card active" data-type="total" onclick="selectSimType('total')">
+              <i class="fa-solid fa-house-chimney-crack"></i>
+              <div class="sim-radio-info">
+                <strong data-i18n="sim_type_total">Remodelação Total</strong>
+                <small data-i18n="sim_type_total_desc">Apartamento / Moradia inteira</small>
+              </div>
+            </div>
+            <div class="sim-radio-card" data-type="parcial" onclick="selectSimType('parcial')">
+              <i class="fa-solid fa-utensils"></i>
+              <div class="sim-radio-info">
+                <strong data-i18n="sim_type_parcial">Cozinha &amp; Casas de Banho</strong>
+                <small data-i18n="sim_type_parcial_desc">Áreas húmidas prioritárias</small>
+              </div>
+            </div>
+            <div class="sim-radio-card" data-type="capoto" onclick="selectSimType('capoto')">
+              <i class="fa-solid fa-temperature-arrow-down"></i>
+              <div class="sim-radio-info">
+                <strong data-i18n="sim_type_capoto">Fachada &amp; Capoto (ETICS)</strong>
+                <small data-i18n="sim_type_capoto_desc">Isolamento e janelas de corte térmico</small>
+              </div>
+            </div>
+            <div class="sim-radio-card" data-type="nova" onclick="selectSimType('nova')">
+              <i class="fa-solid fa-building"></i>
+              <div class="sim-radio-info">
+                <strong data-i18n="sim_type_nova">Construção Nova do Zero</strong>
+                <small data-i18n="sim_type_nova_desc">Moradia unifamiliar chave na mão</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Área em Metros Quadrados (m²) -->
+        <div class="sim-field-group">
+          <label class="sim-label" for="sim-area-slider">
+            <span data-i18n="sim_lbl_area">2. Área Bruta de Intervenção (m²):</span>
+            <span class="sim-label-val" id="sim-area-display">95 m²</span>
+          </label>
+          <input type="range" id="sim-area-slider" class="slider-range" min="20" max="450" step="5" value="95" oninput="updateSimArea(this.value)">
+        </div>
+
+        <!-- 3. Padrão de Acabamentos -->
+        <div class="sim-field-group">
+          <label class="sim-label">
+            <span data-i18n="sim_lbl_acabamento">3. Padrão de Acabamentos:</span>
+          </label>
+          <div class="sim-radio-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="sim-radio-card" data-tier="standard" onclick="selectSimTier('standard')">
+              <div class="sim-radio-info">
+                <strong data-i18n="sim_tier_std">Standard</strong>
+                <small data-i18n="sim_tier_std_sub">Equilibrado / Arrendamento</small>
+              </div>
+            </div>
+            <div class="sim-radio-card active" data-tier="premium" onclick="selectSimTier('premium')">
+              <div class="sim-radio-info">
+                <strong data-i18n="sim_tier_prem">Premium Comfort</strong>
+                <small data-i18n="sim_tier_prem_sub">Habitação Própria</small>
+              </div>
+            </div>
+            <div class="sim-radio-card" data-tier="luxo" onclick="selectSimTier('luxo')">
+              <div class="sim-radio-info">
+                <strong data-i18n="sim_tier_lux">Luxo &amp; Design</strong>
+                <small data-i18n="sim_tier_lux_sub">Marcas Nobres Europeias</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Região / Localização -->
+        <div class="sim-field-group">
+          <label class="sim-label" for="sim-location-select">
+            <span data-i18n="sim_lbl_local">4. Localização da Obra:</span>
+          </label>
+          <select id="sim-location-select" class="form-control" onchange="calculateSimulator()">
+            <option value="lisboa" selected>Grande Lisboa &amp; Linha de Cascais / Oeiras</option>
+            <option value="porto">Grande Porto, Gaia &amp; Matosinhos</option>
+            <option value="algarve">Algarve (Faro, Albufeira, Lagos, Vilamoura)</option>
+            <option value="centro">Centro &amp; Outros Concelhos (Braga, Coimbra, Leiria)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Result Card -->
+      <div class="sim-result-card">
+        <span class="sim-result-tag" data-i18n="sim_res_estimativa">Estimativa Média de Investimento</span>
+        <div class="sim-result-price" id="sim-price-range">49.400 € — 61.750 €</div>
+
+        <div class="sim-result-details">
+          <div class="sim-detail-item">
+            <span data-i18n="sim_det_prazo">Prazo Médio Estimado:</span>
+            <strong id="sim-prazo">8 a 12 semanas</strong>
+          </div>
+          <div class="sim-detail-item">
+            <span data-i18n="sim_det_preco_m2">Valor por m²:</span>
+            <strong id="sim-preco-m2">520 € a 650 € / m²</strong>
+          </div>
+          <div class="sim-detail-item">
+            <span data-i18n="sim_det_enquadramento">Enquadramento IVA:</span>
+            <strong id="sim-iva-info">6% (Se ARU) ou 23%</strong>
+          </div>
+          <div class="sim-detail-item">
+            <span data-i18n="sim_det_garantia">Garantia Técnica:</span>
+            <strong id="sim-garantia-info">5 a 10 Anos de Lei</strong>
+          </div>
+        </div>
+
+        <a href="#contacto" class="sim-cta-btn">
+          <i class="fa-solid fa-clipboard-check"></i>
+          <span data-i18n="sim_btn_proposta">Solicitar Proposta Fechada</span>
+        </a>
+
+        <a id="sim-whatsapp-share" href="#" target="_blank" class="sim-whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span data-i18n="sim_btn_whatsapp">Enviar Detalhes para WhatsApp</span>
+        </a>
+
+        <small style="font-size:0.75rem; color:var(--text-dim);" data-i18n="sim_disclaimer">
+          * Valores de referência sem compromisso contratual, sujeitos a vistoria técnica prévia gratuita e projeto de execução.
+        </small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Showcase Section -->
+  <section id="portfolio" class="content-section">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="portfolio_tag">Obras Concluídas</span>
+      <h3 class="section-title" data-i18n="portfolio_title">Projetos Executados em Portugal</h3>
+      <p class="section-subtitle" data-i18n="portfolio_subtitle">
+        Conheça algumas das nossas transformações residenciais e de edifícios em Lisboa, Cascais, Porto e Algarve.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <div class="portfolio-card">
+        <div class="portfolio-img-box">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600" alt="Apartamento Chiado Lisboa" class="portfolio-img">
+          <span class="portfolio-tag" data-i18n="port1_tag">Remodelação Total T3</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-location">Lisboa • Chiado</div>
+          <h4 class="portfolio-title" data-i18n="port1_title">Apartamento Histórico com Pavimento Original</h4>
+          <p class="service-desc" data-i18n="port1_desc">
+            Recuperação de chão em tábua corrida de pinho bravo, integração de suite principal com banheira em ilha e caixilharia de corte acústico virada para a rua.
+          </p>
+          <div class="portfolio-meta">
+            <span><i class="fa-solid fa-ruler-combined"></i> 140 m²</span>
+            <span><i class="fa-solid fa-clock"></i> 10 semanas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-card">
+        <div class="portfolio-img-box">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600" alt="Moradia Cascais" class="portfolio-img">
+          <span class="portfolio-tag" data-i18n="port2_tag">Construção Chave na Mão</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-location">Cascais • Quinta da Marinha</div>
+          <h4 class="portfolio-title" data-i18n="port2_title">Moradia Contemporânea com Fachada em Capoto</h4>
+          <p class="service-desc" data-i18n="port2_desc">
+            Estrutura em betão armado e linhas minimalistas. Isolamento exterior ETICS 80mm com certificação energética A+, painéis solares e piscina infinita.
+          </p>
+          <div class="portfolio-meta">
+            <span><i class="fa-solid fa-ruler-combined"></i> 320 m²</span>
+            <span><i class="fa-solid fa-clock"></i> 11 meses</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-card">
+        <div class="portfolio-img-box">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600" alt="Apartamento Porto Foz" class="portfolio-img">
+          <span class="portfolio-tag" data-i18n="port3_tag">Cozinha &amp; Sala Open Space</span>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-location">Porto • Foz do Douro</div>
+          <h4 class="portfolio-title" data-i18n="port3_title">Remodelação com Vista Mar &amp; Mármore Estremoz</h4>
+          <p class="service-desc" data-i18n="port3_desc">
+            Demolição de paredes não estruturais para criar um conceito open space luminoso, ilha em pedra mármore de Estremoz e climatização embutida por conduta.
+          </p>
+          <div class="portfolio-meta">
+            <span><i class="fa-solid fa-ruler-combined"></i> 115 m²</span>
+            <span><i class="fa-solid fa-clock"></i> 7 semanas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust, Licensing & IMPIC Section -->
+  <section id="garantias" class="content-section" style="background: rgba(15, 23, 42, 0.4); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="trust_tag">Segurança Jurídica &amp; Técnica</span>
+      <h3 class="section-title" data-i18n="trust_title">Por que Confiar na Lusitana em Portugal?</h3>
+      <p class="section-subtitle" data-i18n="trust_subtitle">
+        Construir ou remodelar em Portugal exige conformidade legal rigorosa. Conheça as salvaguardas que protegem o seu património do início ao fim.
+      </p>
+    </div>
+
+    <div class="trust-grid">
+      <!-- Pillar 1: IMPIC -->
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-stamp"></i></div>
+        <h4 class="trust-title" data-i18n="trust1_title">Alvará de Construção IMPIC</h4>
+        <p class="trust-desc" data-i18n="trust1_desc">
+          Empresa titular do <strong>Alvará N.º 98452-PAR</strong> emitido pelo Instituto dos Mercados Públicos do Imobiliário e da Construção. Habilitação legal total para obras particulares e públicas.
+        </p>
+      </div>
+
+      <!-- Pillar 2: 10 Anos de Garantia -->
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-award"></i></div>
+        <h4 class="trust-title" data-i18n="trust2_title">Garantia Decenal de Obra</h4>
+        <p class="trust-desc" data-i18n="trust2_desc">
+          Cumprimento integral do <strong>Decreto-Lei n.º 84/2021</strong>: 10 anos de garantia legal para defeitos estruturais e 5 anos para equipamentos, revestimentos e acabamentos.
+        </p>
+      </div>
+
+      <!-- Pillar 3: Seguro 500k -->
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h4 class="trust-title" data-i18n="trust3_title">Seguro de Responsabilidade Civil</h4>
+        <p class="trust-desc" data-i18n="trust3_desc">
+          Apólice de seguro com cobertura de <strong>500.000 €</strong> e seguro de acidentes de trabalho obrigatório para 100% da mão-de-obra presente no estaleiro.
+        </p>
+      </div>
+
+      <!-- Pillar 4: Cronograma Vinculativo -->
+      <div class="trust-card">
+        <div class="trust-icon"><i class="fa-solid fa-file-signature"></i></div>
+        <h4 class="trust-title" data-i18n="trust4_title">Contrato de Empreitada Escrito</h4>
+        <p class="trust-desc" data-i18n="trust4_desc">
+          Cronograma físico-financeiro detalhado. Pagamentos fracionados vinculados à conclusão e fiscalização de cada etapa. Sem custos ocultos nem derrapagens.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trilingual Testimonials Section -->
+  <section class="content-section">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="test_tag">A Voz dos Nossos Clientes</span>
+      <h3 class="section-title" data-i18n="test_title">Experiências de Quem Já Remodelou Connosco</h3>
+      <p class="section-subtitle" data-i18n="test_subtitle">
+        Proprietários portugueses, investidores brasileiros e clientes internacionais partilham a sua experiência.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+      <!-- Testimonial 1: Brazilian Investor -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testimonial-quote" data-i18n="test1_quote">
+          "Contratar uma obra em Lisboa estando em São Paulo gerava muita insegurança no início. A Lusitana foi impecável: entregou a reforma dentro do prazo com relatórios em vídeo semanais, cuidou de toda a burocracia do condomínio e as fotos 360° no portal permitiram acompanhar tudo sem sair do Brasil."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-flag">🇧🇷</div>
+          <div class="author-info">
+            <strong data-i18n="test1_author">Marcelo &amp; Beatriz Andrade</strong>
+            <small data-i18n="test1_role">Investidores de São Paulo • T3 no Chiado, Lisboa</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2: Local Portuguese Homeowner -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testimonial-quote" data-i18n="test2_quote">
+          "Fizemos a remodelação total da nossa moradia de família em Cascais com aplicação de capoto exterior e substituição de todas as canalizações e caixilharias. O rigor com o orçamento acordado e com os prazos de entrega foi exemplar. O conforto térmico no inverno mudou radicalmente."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-flag">🇵🇹</div>
+          <div class="author-info">
+            <strong data-i18n="test2_author">Eng.º Miguel Carvalhal</strong>
+            <small data-i18n="test2_role">Proprietário em Cascais • Moradia Unifamiliar</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3: UK International Investor -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testimonial-quote" data-i18n="test3_quote">
+          "Outstanding communication in English from day one. They handled municipal planning permissions and the turnkey villa renovation in Quinta do Lago flawlessly. The high-end finishes, stone masonry, and project timeline were fully respected. Truly a top-tier construction firm in Portugal."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-flag">🇬🇧</div>
+          <div class="author-info">
+            <strong data-i18n="test3_author">David &amp; Sarah Jenkins</strong>
+            <small data-i18n="test3_role">Homeowners from London • Luxury Villa, Algarve</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical FAQ Section -->
+  <section id="faq" class="content-section" style="background: rgba(15, 23, 42, 0.4); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="faq_tag">Esclarecimentos Rápidos</span>
+      <h3 class="section-title" data-i18n="faq_title">Perguntas Frequentes sobre Obras em Portugal</h3>
+      <p class="section-subtitle" data-i18n="faq_subtitle">
+        Tire todas as dúvidas sobre licenciamento, IVA reduzido a 6%, garantias legais e métodos de pagamento.
+      </p>
+    </div>
+
+    <div class="faq-container">
+      <!-- FAQ 1 -->
+      <div class="faq-item open">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq1_q">Preciso de licença da Câmara Municipal para remodelar o interior do meu apartamento?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" style="display:block;" data-i18n="faq1_a">
+          Geralmente não. Obras interiores que não mexam com a estrutura resistente do edifício (paredes mestras, pilares ou vigas), não alterem a fachada nem aumentem a cércea ou a volumetria estão isentas de controlo prévio camarário pelo Regime Jurídico da Urbanização e Edificação (RJUE). No entanto, caso a intervenção envolva alteração estrutural ou abertura de vãos na fachada, a Lusitana elabora e submete o respetivo projeto camarário.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq2_q">Como funciona a taxa reduzida de IVA a 6% na Reabilitação Urbana (ARU)?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" data-i18n="faq2_a">
+          Ao abrigo da Verba 2.23 da Lista I anexa ao Código do IVA, os contratos de empreitada de beneficiação, remodelação ou reabilitação de imóveis localizados em Áreas de Reabilitação Urbana (ARU) delimitadas pelas Câmaras Municipais beneficiam da taxa reduzida de IVA de 6% (ou 4% e 5% nas Ilhas da Madeira e Açores). Nós tratamos da certidão de localização ARU e aplicamos a taxa reduzida diretamente na faturação.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq3_q">Como acompanho o progresso da obra se estiver a viver fora de Portugal?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" data-i18n="faq3_a">
+          Disponibilizamos um serviço exclusivo de gestão remota. Terá um Gestor de Projeto dedicado que envia relatórios fotográficos e em vídeo semanais, cronograma físico em tempo real e reuniões de alinhamento por videochamada. Todo o diário de obra é documentado digitalmente para a sua total tranquilidade.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq4_q">Quais são as modalidades e etapas de pagamento aceites?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" data-i18n="faq4_a">
+          Os pagamentos são sempre escalonados e associados a metas contratuais cumpridas (ex: 25% Adiantamento Inicial para montagem de estaleiro e materiais, 25% Conclusão de demolições e redes técnicas, 25% Revestimentos e carpintarias, 15% Equipamentos e pinturas, e 10% na Entrega Final com Auto de Receção). Aceitamos Transferência Bancária SEPA em Euros, MB WAY, Referência Multibanco e Cartão de Crédito internacional.
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span data-i18n="faq5_q">Qual é o prazo médio de execução para a remodelação de um apartamento T2 ou T3?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer" data-i18n="faq5_a">
+          Uma remodelação integral de apartamento T2 com cerca de 80 m² a 95 m² demora em média entre 8 a 10 semanas de trabalho contínuo. Para um apartamento T3 de 120 m² a 150 m², o prazo situa-se habitualmente entre 10 a 14 semanas, dependendo do tempo de secagem de betonilhas e da personalização das carpintarias e cozinhas.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Formal Quote Request Section -->
+  <section id="contacto" class="content-section">
+    <div class="contact-wrapper">
+      <!-- Info Side -->
+      <div class="contact-info-side">
+        <span class="section-tag" data-i18n="contact_tag">Inicie a Sua Obra</span>
+        <h3 data-i18n="contact_title">Solicite uma Visita Técnica ou Reunião com a Engenharia</h3>
+        <p data-i18n="contact_desc">
+          Tem um imóvel para remodelar ou um terreno para construir em Portugal? Descreva o seu projeto para recebermos a planta e elaborarmos uma proposta detalhada com lista de quantidades e preços unitários.
+        </p>
+
+        <div class="contact-card-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong data-i18n="contact_sede">Sede Central Lisboa</strong>
+            <span>Avenida da Liberdade, 245, 4.º Andar, 1250-143 Lisboa</span>
+          </div>
+        </div>
+
+        <div class="contact-card-item">
+          <i class="fa-solid fa-building-user"></i>
+          <div>
+            <strong data-i18n="contact_filial">Escritório Norte &amp; Porto</strong>
+            <span>Avenida da Boavista, 1180, 4100-130 Porto</span>
+          </div>
+        </div>
+
+        <div class="contact-card-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong data-i18n="contact_atendimento">Linha Direta &amp; WhatsApp</strong>
+            <span>+351 912 345 678 (Atendimento PT/EN)</span>
+          </div>
+        </div>
+
+        <div class="contact-card-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong data-i18n="contact_email_title">Correio Eletrónico</strong>
+            <span>contacto@lusitana-obras.pt</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Side -->
+      <div class="contact-form-side">
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-nome" data-i18n="form_lbl_nome">Nome Completo *</label>
+              <input type="text" id="form-nome" class="form-control" required placeholder="Ex: Dr. Rodrigo Silveira">
+            </div>
+            <div class="form-group">
+              <label for="form-whatsapp" data-i18n="form_lbl_tel">Telefone / WhatsApp *</label>
+              <input type="tel" id="form-whatsapp" class="form-control" required placeholder="+351 912 345 678 ou +55 11...">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-email" data-i18n="form_lbl_email">Email Corporativo / Pessoal *</label>
+              <input type="email" id="form-email" class="form-control" required placeholder="seu.email@exemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="form-cidade" data-i18n="form_lbl_concelho">Concelho / Região da Obra *</label>
+              <select id="form-cidade" class="form-control">
+                <option value="Lisboa">Lisboa (Centro Histórico / Avenidas Novas)</option>
+                <option value="Cascais / Oeiras / Sintra">Cascais / Oeiras / Sintra</option>
+                <option value="Porto / Gaia / Matosinhos">Porto / Gaia / Matosinhos</option>
+                <option value="Algarve">Algarve (Faro, Albufeira, Lagos, Vilamoura)</option>
+                <option value="Outro Concelho">Outro Concelho de Portugal Continental</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-tipo-obra" data-i18n="form_lbl_tipo_obra">Tipo de Imóvel e Intervenção *</label>
+            <select id="form-tipo-obra" class="form-control">
+              <option value="Remodelação Total de Apartamento">Remodelação Total de Apartamento</option>
+              <option value="Remodelação de Moradia Unifamiliar">Remodelação de Moradia Unifamiliar</option>
+              <option value="Reabilitação de Prédio Inteiro (ARU)">Reabilitação de Prédio Inteiro (ARU)</option>
+              <option value="Construção Nova do Zero (Turnkey)">Construção Nova do Zero (Turnkey)</option>
+              <option value="Isolamento Capoto / Fachada e Cobertura">Isolamento Capoto / Fachada e Cobertura</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="form-mensagem" data-i18n="form_lbl_mensagem">Breve Descrição do Projeto / Metragem Estimada</label>
+            <textarea id="form-mensagem" class="form-control" placeholder="Indique a área em m², data pretendida de início e se já possui projeto de arquitetura ou planta..."></textarea>
+          </div>
+
+          <button type="submit" class="form-btn-submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span data-i18n="form_btn_enviar">Submeter Pedido de Orçamento Gratuito</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accepted Payments & Industry Certifications Strip -->
+  <div class="payments-strip">
+    <div class="payments-inner">
+      <div class="payment-pill"><i class="fa-solid fa-mobile-screen"></i> MB WAY</div>
+      <div class="payment-pill"><i class="fa-solid fa-credit-card"></i> Multibanco SIBS</div>
+      <div class="payment-pill"><i class="fa-solid fa-building-columns"></i> Transferência SEPA IBAN (EUR)</div>
+      <div class="payment-pill"><i class="fa-brands fa-cc-visa"></i> Visa / Mastercard Europeu</div>
+      <div class="payment-pill"><i class="fa-solid fa-stamp"></i> IMPIC Alvará 98452</div>
+      <div class="payment-pill"><i class="fa-solid fa-shield-virus"></i> Código Civil Decenal</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4 style="display:flex; align-items:center; gap:8px;">
+          <i class="fa-solid fa-compass-drafting" style="color:var(--primary);"></i>
+          LUSITANA OBRAS &amp; REMODELAÇÕES
+        </h4>
+        <p data-i18n="ftr_bio">
+          Empresa de engenharia civil, remodelações de luxo e reabilitação de edifícios em Portugal. Alvará de Construção IMPIC N.º 98452-PAR. Garantia decenal de obra, rigor técnico e excelência em acabamentos.
+        </p>
+        <p style="font-size:0.8rem; color:var(--text-dim);">
+          NIF / NIPC: 509 845 210 • Capital Social: 100.000,00 € • Seguro Allianz Apólice N.º 20491823
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="ftr_servicos_title">Serviços</h4>
+        <ul class="footer-links">
+          <li><a href="#servicos" data-i18n="svc1_title">Remodelação Total</a></li>
+          <li><a href="#reabilitacao" data-i18n="svc2_title">Reabilitação ARU (IVA 6%)</a></li>
+          <li><a href="#servicos" data-i18n="svc3_title">Isolamento Capoto (ETICS)</a></li>
+          <li><a href="#servicos" data-i18n="svc4_title">Construção Chave na Mão</a></li>
+          <li><a href="#simulador" data-i18n="nav_simulador">Simulador por m²</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="ftr_regioes_title">Regiões Atendidas</h4>
+        <ul class="footer-links">
+          <li><a href="#contacto">Lisboa &amp; Parque das Nações</a></li>
+          <li><a href="#contacto">Cascais, Estoril &amp; Sintra</a></li>
+          <li><a href="#contacto">Porto, Matosinhos &amp; Foz</a></li>
+          <li><a href="#contacto">Algarve (Vilamoura &amp; Lagos)</a></li>
+          <li><a href="#contacto">Oeiras &amp; Linha de Sintra</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="ftr_contacto_title">Contactos &amp; Suporte</h4>
+        <p style="margin-bottom:8px;">
+          <i class="fa-solid fa-phone" style="color:var(--primary); margin-right:6px;"></i>
+          <a href="tel:+351912345678" style="color:#fff; text-decoration:none;">+351 912 345 678</a>
+        </p>
+        <p style="margin-bottom:8px;">
+          <i class="fa-solid fa-envelope" style="color:var(--primary); margin-right:6px;"></i>
+          <span style="color:#fff;">contacto@lusitana-obras.pt</span>
+        </p>
+        <p style="margin-bottom:14px;">
+          <i class="fa-solid fa-clock" style="color:var(--primary); margin-right:6px;"></i>
+          <span data-i18n="ftr_horario">Segunda a Sexta: 08:30 às 18:30</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        &copy; 2026 Lusitana Obras &amp; Remodelações, Lda. Todos os direitos reservados.
+      </div>
+      <div>
+        <span data-i18n="ftr_disclaimer">Publicado soberanamente via Sophia Editorial &amp; GitHub Pages ('hodrichtech').</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/+351912345678?text=Ola!%20Visitei%20o%20site%20da%20Lusitana%20e%20gostaria%20de%20falar%20com%20um%20engenheiro%20sobre%20uma%20obra." target="_blank" class="floating-whatsapp" title="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Interactive Trilingual Localization Runtime & Simulator Script -->
+  <script>
+    // Trilingual Dictionary Database
+    const TRANSLATIONS = {
+      'pt-PT': {
+        brand_slogan: 'Construção & Remodelações em Portugal',
+        ribbon_alvara: 'Alvará de Construção IMPIC N.º 98452-PAR',
+        ribbon_seguro: 'Seguro Responsabilidade Civil 500.000 €',
+        ribbon_garantia: 'Garantia Decenal 10 Anos (DL 84/2021)',
+        nav_servicos: 'Serviços',
+        nav_reabilitacao: 'Reabilitação & ARU',
+        nav_simulador: 'Simulador m²',
+        nav_portfolio: 'Portefólio',
+        nav_garantias: 'Alvará & Garantia',
+        nav_faq: 'Perguntas Frequentes',
+        nav_contacto: 'Contacto',
+        btn_orcamento_header: 'Pedir Orçamento',
+        hero_badge: '🇵🇹 Construtora Certificada • Obras Chave na Mão em Portugal',
+        hero_title_p1: 'Remodelações de Interiores e',
+        hero_title_highlight: 'Construção Civil Chave na Mão',
+        hero_title_p2: 'em Portugal',
+        hero_subtitle: 'Transformamos apartamentos, moradias e edifícios históricos em Lisboa, Porto, Cascais e Algarve. Gestão integral de projeto, alvará IMPIC, assessoria completa para investidores e cumprimento escrupuloso de prazos e orçamentos.',
+        hero_cta_simular: 'Simular Custo da Minha Obra',
+        hero_cta_whatsapp: 'Falar com Engenheiro no WhatsApp',
+        metric_obras: 'Obras Concluídas',
+        metric_prazos: 'Prazos Rigorosos',
+        metric_garantia: 'Garantia Estrutural',
+        metric_iva: 'Taxa Reduzida ARU',
+        servicos_tag: 'Especialidades Técnicas',
+        servicos_title: 'Soluções Completas de Engenharia & Arquitetura',
+        servicos_subtitle: 'Equipas próprias multidisciplinares em Lisboa, Porto, Cascais e Algarve. Da demolição inicial aos acabamentos nobres com supervisão técnica permanente.',
+        badge_alta_procura: 'Mais Procurado',
+        badge_iva_6: 'IVA a 6%',
+        badge_classe_a: 'Eficiência A+',
+        badge_turnkey: 'Turnkey 100%',
+        badge_investidores: 'Para Não Residentes',
+        svc1_title: 'Remodelação Total de Interiores',
+        svc1_desc: 'Casas de banho modernas, cozinhas por medida com ilha, remodelação de canalizações multicamada, rede elétrica certificada CERTIEL e chão flutuante/vinílico.',
+        svc1_b1: 'Casas de Banho & Sanitários Suspensos',
+        svc1_b2: 'Cozinhas Planeadas com Eletrodomésticos',
+        svc1_b3: 'Iluminação LED & Tetos Falsos com Sancas',
+        svc2_title: 'Reabilitação de Prédios Históricos',
+        svc2_desc: 'Restauro de edifícios antigos em Lisboa (Baixa, Alfama, Chiado) e Porto (Cedofeita, Baixa). Recuperação de fachadas, azulejos, tabique e gaiola pombalina com IVA a 6%.',
+        svc2_b1: 'Enquadramento Fiscal ARU (Taxa Reduzida)',
+        svc2_b2: 'Reforço Estrutural Metálico & Madeira',
+        svc2_b3: 'Restauro Fiel de Elementos Históricos',
+        svc3_title: 'Isolamento Térmico & Capoto (ETICS)',
+        svc3_desc: 'Aplicação de sistema ETICS (Capoto) em fachadas, caixilharia de PVC ou alumínio com corte térmico e vidros duplos Guardian Sun. Eliminação de humidades e pontes térmicas.',
+        svc3_b1: 'Capoto EPS/Lã de Rocha 60mm a 100mm',
+        svc3_b2: 'Redução de até 60% na Conta Energética',
+        svc3_b3: 'Garantia Contra Humidade por Condensação',
+        svc4_title: 'Construção de Moradias Chave na Mão',
+        svc4_desc: 'Do projeto de arquitetura e licenciamento camarário à escavação, estrutura de betão armado e acabamentos de luxo em Cascais, Sintra, Oeiras e Algarve.',
+        svc4_b1: 'Projeto de Arquitetura & Especialidades',
+        svc4_b2: 'Licenciamento na Câmara Municipal',
+        svc4_b3: 'Piscina, Jardins e Domótica Integrada',
+        svc5_title: 'Impermeabilizações & Coberturas',
+        svc5_desc: 'Impermeabilização de terraços com telas asfálticas ou membranas líquidas de poliuretano, reparação de telhados e pinturas exteriores de alta durabilidade (Cin / Robbialac).',
+        svc5_b1: 'Teste de Estanquidade com Garantia',
+        svc5_b2: 'Tintas Hidrofugantes e Antifungos',
+        svc5_b3: 'Lavagem Mecânica e Selagem de Fissuras',
+        svc6_title: 'Gestão Remota para Investidores',
+        svc6_desc: 'Acompanhamento completo de obra para investidores brasileiros e internacionais. Relatórios em vídeo semanais, portal online, fiscalização independente e controlo de custos.',
+        svc6_b1: 'Relatórios Semanais em Vídeo e Fotos 360°',
+        svc6_b2: 'Atendimento Trilingue (PT, BR, EN)',
+        svc6_b3: 'Pagamentos Escalonados por Metas Físicas',
+        btn_simular_servico: 'Simular este Serviço',
+        btn_saber_mais: 'Saber mais sobre ARU',
+        btn_falar_consultor: 'Falar com Consultor',
+        aru_title: 'Poupança Fiscal: IVA Reduzido a 6% em Obras ARU',
+        aru_desc: 'Sabia que em Portugal as obras de reabilitação urbana em edifícios localizados em Áreas de Reabilitação Urbana (ARU) de Lisboa, Porto, Cascais e Sintra beneficiam da taxa reduzida de IVA a 6% (em vez dos 23% habituais)? A Lusitana instrui todo o processo técnico e documental junto da autarquia para garantir o seu benefício fiscal.',
+        aru_taxa_sub: 'Taxa Reduzida de IVA',
+        sim_tag: 'Transparência Total',
+        sim_title: 'Simulador de Custos de Remodelação em Portugal',
+        sim_subtitle: 'Obtenha uma estimativa instantânea e rigorosa para a sua obra de acordo com as tabelas de preços praticadas no mercado português atualizado a 2026.',
+        sim_lbl_tipo: '1. Tipo de Intervenção:',
+        sim_type_total: 'Remodelação Total',
+        sim_type_total_desc: 'Apartamento / Moradia inteira',
+        sim_type_parcial: 'Cozinha & Casas de Banho',
+        sim_type_parcial_desc: 'Áreas húmidas prioritárias',
+        sim_type_capoto: 'Fachada & Capoto (ETICS)',
+        sim_type_capoto_desc: 'Isolamento e janelas de corte térmico',
+        sim_type_nova: 'Construção Nova do Zero',
+        sim_type_nova_desc: 'Moradia unifamiliar chave na mão',
+        sim_lbl_area: '2. Área Bruta de Intervenção (m²):',
+        sim_lbl_acabamento: '3. Padrão de Acabamentos:',
+        sim_tier_std: 'Standard',
+        sim_tier_std_sub: 'Equilibrado / Arrendamento',
+        sim_tier_prem: 'Premium Comfort',
+        sim_tier_prem_sub: 'Habitação Própria',
+        sim_tier_lux: 'Luxo & Design',
+        sim_tier_lux_sub: 'Marcas Nobres Europeias',
+        sim_lbl_local: '4. Localização da Obra:',
+        sim_res_estimativa: 'Estimativa Média de Investimento',
+        sim_det_prazo: 'Prazo Médio Estimado:',
+        sim_det_preco_m2: 'Valor por m²:',
+        sim_det_enquadramento: 'Enquadramento IVA:',
+        sim_det_garantia: 'Garantia Técnica:',
+        sim_btn_proposta: 'Solicitar Proposta Fechada',
+        sim_btn_whatsapp: 'Enviar Detalhes para WhatsApp',
+        sim_disclaimer: '* Valores de referência sem compromisso contratual, sujeitos a vistoria técnica prévia gratuita e projeto de execução.',
+        portfolio_tag: 'Obras Concluídas',
+        portfolio_title: 'Projetos Executados em Portugal',
+        portfolio_subtitle: 'Conheça algumas das nossas transformações residenciais e de edifícios em Lisboa, Cascais, Porto e Algarve.',
+        port1_tag: 'Remodelação Total T3',
+        port1_title: 'Apartamento Histórico com Pavimento Original',
+        port1_desc: 'Recuperação de chão em tábua corrida de pinho bravo, integração de suite principal com banheira em ilha e caixilharia de corte acústico virada para a rua.',
+        port2_tag: 'Construção Chave na Mão',
+        port2_title: 'Moradia Contemporânea com Fachada em Capoto',
+        port2_desc: 'Estrutura em betão armado e linhas minimalistas. Isolamento exterior ETICS 80mm com certificação energética A+, painéis solares e piscina infinita.',
+        port3_tag: 'Cozinha & Sala Open Space',
+        port3_title: 'Remodelação com Vista Mar & Mármore Estremoz',
+        port3_desc: 'Demolição de paredes não estruturais para criar um conceito open space luminoso, ilha em pedra mármore de Estremoz e climatização embutida por conduta.',
+        trust_tag: 'Segurança Jurídica & Técnica',
+        trust_title: 'Por que Confiar na Lusitana em Portugal?',
+        trust_subtitle: 'Construir ou remodelar em Portugal exige conformidade legal rigorosa. Conheça as salvaguardas que protegem o seu património do início ao fim.',
+        trust1_title: 'Alvará de Construção IMPIC',
+        trust1_desc: 'Empresa titular do Alvará N.º 98452-PAR emitido pelo Instituto dos Mercados Públicos do Imobiliário e da Construção. Habilitação legal total para obras particulares e públicas.',
+        trust2_title: 'Garantia Decenal de Obra',
+        trust2_desc: 'Cumprimento integral do Decreto-Lei n.º 84/2021: 10 anos de garantia legal para defeitos estruturais e 5 anos para equipamentos, revestimentos e acabamentos.',
+        trust3_title: 'Seguro de Responsabilidade Civil',
+        trust3_desc: 'Apólice de seguro com cobertura de 500.000 € e seguro de acidentes de trabalho obrigatório para 100% da mão-de-obra presente no estaleiro.',
+        trust4_title: 'Contrato de Empreitada Escrito',
+        trust4_desc: 'Cronograma físico-financeiro detalhado. Pagamentos fracionados vinculados à conclusão e fiscalização de cada etapa. Sem custos ocultos nem derrapagens.',
+        test_tag: 'A Voz dos Nossos Clientes',
+        test_title: 'Experiências de Quem Já Remodelou Connosco',
+        test_subtitle: 'Proprietários portugueses, investidores brasileiros e clientes internacionais partilham a sua experiência.',
+        test1_quote: '"Contratar uma obra em Lisboa estando em São Paulo gerava muita insegurança no início. A Lusitana foi impecável: entregou a reforma dentro do prazo com relatórios em vídeo semanais, cuidou de toda a burocracia do condomínio e as fotos 360° no portal permitiram acompanhar tudo sem sair do Brasil."',
+        test1_author: 'Marcelo & Beatriz Andrade',
+        test1_role: 'Investidores de São Paulo • T3 no Chiado, Lisboa',
+        test2_quote: '"Fizemos a remodelação total da nossa moradia de família em Cascais com aplicação de capoto exterior e substituição de todas as canalizações e caixilharias. O rigor com o orçamento acordado e com os prazos de entrega foi exemplar. O conforto térmico no inverno mudou radicalmente."',
+        test2_author: 'Eng.º Miguel Carvalhal',
+        test2_role: 'Proprietário em Cascais • Moradia Unifamiliar',
+        test3_quote: '"Outstanding communication in English from day one. They handled municipal planning permissions and the turnkey villa renovation in Quinta do Lago flawlessly. The high-end finishes, stone masonry, and project timeline were fully respected. Truly a top-tier construction firm in Portugal."',
+        test3_author: 'David & Sarah Jenkins',
+        test3_role: 'Homeowners from London • Luxury Villa, Algarve',
+        faq_tag: 'Esclarecimentos Rápidos',
+        faq_title: 'Perguntas Frequentes sobre Obras em Portugal',
+        faq_subtitle: 'Tire todas as dúvidas sobre licenciamento, IVA reduzido a 6%, garantias legais e métodos de pagamento.',
+        faq1_q: 'Preciso de licença da Câmara Municipal para remodelar o interior do meu apartamento?',
+        faq1_a: 'Geralmente não. Obras interiores que não mexam com a estrutura resistente do edifício (paredes mestras, pilares ou vigas), não alterem a fachada nem aumentem a cércea ou a volumetria estão isentas de controlo prévio camarário pelo Regime Jurídico da Urbanização e Edificação (RJUE). No entanto, caso a intervenção envolva alteração estrutural ou abertura de vãos na fachada, a Lusitana elabora e submete o respetivo projeto camarário.',
+        faq2_q: 'Como funciona a taxa reduzida de IVA a 6% na Reabilitação Urbana (ARU)?',
+        faq2_a: 'Ao abrigo da Verba 2.23 da Lista I anexa ao Código do IVA, os contratos de empreitada de beneficiação, remodelação ou reabilitação de imóveis localizados em Áreas de Reabilitação Urbana (ARU) delimitadas pelas Câmaras Municipais beneficiam da taxa reduzida de IVA de 6% (ou 4% e 5% nas Ilhas da Madeira e Açores). Nós tratamos da certidão de localização ARU e aplicamos a taxa reduzida diretamente na faturação.',
+        faq3_q: 'Como acompanho o progresso da obra se estiver a viver fora de Portugal?',
+        faq3_a: 'Disponibilizamos um serviço exclusivo de gestão remota. Terá um Gestor de Projeto dedicado que envia relatórios fotográficos e em vídeo semanais, cronograma físico em tempo real e reuniões de alinhamento por videochamada. Todo o diário de obra é documentado digitalmente para a sua total tranquilidade.',
+        faq4_q: 'Quais são as modalidades e etapas de pagamento aceites?',
+        faq4_a: 'Os pagamentos são sempre escalonados e associados a metas contratuais cumpridas (ex: 25% Adiantamento Inicial para montagem de estaleiro e materiais, 25% Conclusão de demolições e redes técnicas, 25% Revestimentos e carpintarias, 15% Equipamentos e pinturas, e 10% na Entrega Final com Auto de Receção). Aceitamos Transferência Bancária SEPA em Euros, MB WAY, Referência Multibanco e Cartão de Crédito internacional.',
+        faq5_q: 'Qual é o prazo médio de execução para a remodelação de um apartamento T2 ou T3?',
+        faq5_a: 'Uma remodelação integral de apartamento T2 com cerca de 80 m² a 95 m² demora em média entre 8 a 10 semanas de trabalho contínuo. Para um apartamento T3 de 120 m² a 150 m², o prazo situa-se habitualmente entre 10 a 14 semanas, dependendo do tempo de secagem de betonilhas e da personalização das carpintarias e cozinhas.',
+        contact_tag: 'Inicie a Sua Obra',
+        contact_title: 'Solicite uma Visita Técnica ou Reunião com a Engenharia',
+        contact_desc: 'Tem um imóvel para remodelar ou um terreno para construir em Portugal? Descreva o seu projeto para recebermos a planta e elaborarmos uma proposta detalhada com lista de quantidades e preços unitários.',
+        contact_sede: 'Sede Central Lisboa',
+        contact_filial: 'Escritório Norte & Porto',
+        contact_atendimento: 'Linha Direta & WhatsApp',
+        contact_email_title: 'Correio Eletrónico',
+        form_lbl_nome: 'Nome Completo *',
+        form_lbl_tel: 'Telefone / WhatsApp *',
+        form_lbl_email: 'Email Corporativo / Pessoal *',
+        form_lbl_concelho: 'Concelho / Região da Obra *',
+        form_lbl_tipo_obra: 'Tipo de Imóvel e Intervenção *',
+        form_lbl_mensagem: 'Breve Descrição do Projeto / Metragem Estimada',
+        form_btn_enviar: 'Submeter Pedido de Orçamento Gratuito',
+        ftr_bio: 'Empresa de engenharia civil, remodelações de luxo e reabilitação de edifícios em Portugal. Alvará de Construção IMPIC N.º 98452-PAR. Garantia decenal de obra, rigor técnico e excelência em acabamentos.',
+        ftr_servicos_title: 'Serviços',
+        ftr_regioes_title: 'Regiões Atendidas',
+        ftr_contacto_title: 'Contactos & Suporte',
+        ftr_horario: 'Segunda a Sexta: 08:30 às 18:30',
+        ftr_disclaimer: "Publicado soberanamente via Sophia Editorial & GitHub Pages ('hodrichtech')."
+      },
+
+      'pt-BR': {
+        brand_slogan: 'Construção & Reformas em Portugal',
+        ribbon_alvara: 'Licença de Construção IMPIC N.º 98452-PAR',
+        ribbon_seguro: 'Seguro de Responsabilidade Civil 500.000 €',
+        ribbon_garantia: 'Garantia Legal de 10 Anos (DL 84/2021)',
+        nav_servicos: 'Serviços',
+        nav_reabilitacao: 'Reformas & ARU',
+        nav_simulador: 'Simulador m²',
+        nav_portfolio: 'Portfólio',
+        nav_garantias: 'Licença & Garantia',
+        nav_faq: 'Dúvidas Frequentes',
+        nav_contacto: 'Contato',
+        btn_orcamento_header: 'Pedir Orçamento',
+        hero_badge: '🇵🇹 Construtora Certificada • Obras Chave na Mão em Portugal',
+        hero_title_p1: 'Reformas de Alto Padrão e',
+        hero_title_highlight: 'Construção Civil Chave na Mão',
+        hero_title_p2: 'em Portugal',
+        hero_subtitle: 'Especialistas em reformas para investidores e moradores em Lisboa, Porto, Cascais e Algarve. Assessoria completa para brasileiros, gestão total de obra, conformidade legal europeia e cumprimento escrupuloso de prazos.',
+        hero_cta_simular: 'Simular Custo da Minha Reforma',
+        hero_cta_whatsapp: 'Falar com Engenheiro no WhatsApp',
+        metric_obras: 'Obras Concluídas',
+        metric_prazos: 'Prazos Rigorosos',
+        metric_garantia: 'Garantia Estrutural',
+        metric_iva: 'Imposto Reduzido 6%',
+        servicos_tag: 'Especialidades Técnicas',
+        servicos_title: 'Soluções Completas de Engenharia & Arquitetura',
+        servicos_subtitle: 'Equipes próprias multidisciplinares em Lisboa, Porto, Cascais e Algarve. Da demolição inicial aos acabamentos nobres com supervisão técnica permanente.',
+        badge_alta_procura: 'Mais Procurado',
+        badge_iva_6: 'IVA Reduzido 6%',
+        badge_classe_a: 'Eficiência A+',
+        badge_turnkey: 'Chave na Mão',
+        badge_investidores: 'Para Brasileiros',
+        svc1_title: 'Reforma Total de Apartamentos',
+        svc1_desc: 'Banheiros modernos com nichos e louças suspensas, cozinhas planejadas com ilha, hidráulica nova, elétrica certificada e piso vinílico ou taco restaurado.',
+        svc1_b1: 'Banheiros & Louças Suspensas',
+        svc1_b2: 'Cozinhas Planejadas com Eletrodomésticos',
+        svc1_b3: 'Iluminação em LED & Forros de Gesso',
+        svc2_title: 'Restauração de Prédios Históricos',
+        svc2_desc: 'Restauração de imóveis antigos em Lisboa e Porto. Recuperação de fachadas, azulejos, madeira original e estrutura pombalina com alíquota reduzida de IVA a 6%.',
+        svc2_b1: 'Benefício Fiscal ARU (IVA a 6%)',
+        svc2_b2: 'Reforço Estrutural em Aço e Madeira',
+        svc2_b3: 'Preservação de Fachadas Tradicionais',
+        svc3_title: 'Isolamento Térmico & Capoto (ETICS)',
+        svc3_desc: 'Aplicação de Capoto em fachadas, esquadrias de PVC ou alumínio com corte térmico e vidros duplos térmicos. Eliminação definitiva de umidade e frio no inverno.',
+        svc3_b1: 'Capoto EPS/Lã de Rocha 60mm a 100mm',
+        svc3_b2: 'Economia de até 60% em Aquecimento',
+        svc3_b3: 'Eliminação de Mofo e Condensação',
+        svc4_title: 'Construção de Casas Chave na Mão',
+        svc4_desc: 'Do projeto de arquitetura e aprovação na prefeitura à entrega da casa pronta para morar em Cascais, Sintra, Oeiras e Algarve.',
+        svc4_b1: 'Projeto Executivo & Arquitetura',
+        svc4_b2: 'Aprovação na Câmara Municipal',
+        svc4_b3: 'Piscina, Paisagismo e Automação',
+        svc5_title: 'Impermeabilização & Coberturas',
+        svc5_desc: 'Impermeabilização de terraços com membranas de poliuretano, reforma de telhados e pinturas externas de alta resistência para climas úmidos.',
+        svc5_b1: 'Teste de Estanqueidade com Garantia',
+        svc5_b2: 'Tintas Premium Antifungo e Laváveis',
+        svc5_b3: 'Tratamento de Trincas e Infiltrações',
+        svc6_title: 'Gestão Remota para Investidores',
+        svc6_desc: 'Assessoria completa para brasileiros que compraram imóvel em Portugal. Relatórios em vídeo semanais, fotos 360°, fiscalização e gestão contábil sem surpresas.',
+        svc6_b1: 'Relatórios Semanais em Vídeo e 360°',
+        svc6_b2: 'Atendimento Personalizado no Brasil',
+        svc6_b3: 'Pagamentos Parcelados por Etapa Entregue',
+        btn_simular_servico: 'Simular este Serviço',
+        btn_saber_mais: 'Saber mais sobre ARU (IVA 6%)',
+        btn_falar_consultor: 'Falar com Consultor',
+        aru_title: 'Economia Fiscal: IVA Reduzido a 6% em Áreas ARU',
+        aru_desc: 'Você sabia que em Portugal reformas em prédios localizados em Áreas de Reabilitação Urbana (ARU) em Lisboa, Porto e Cascais pagam apenas 6% de imposto (IVA), contra os 23% habituais? Cuidamos de todo o processo de certidão para garantir a sua economia.',
+        aru_taxa_sub: 'Taxa Reduzida de Imposto',
+        sim_tag: 'Transparência Total',
+        sim_title: 'Simulador de Custos de Reforma em Portugal',
+        sim_subtitle: 'Obtenha uma estimativa instantânea e realista para a sua obra de acordo com os custos reais de construção civil em Portugal em 2026.',
+        sim_lbl_tipo: '1. Tipo de Obra:',
+        sim_type_total: 'Reforma Total',
+        sim_type_total_desc: 'Apartamento ou Casa Completa',
+        sim_type_parcial: 'Cozinha & Banheiros',
+        sim_type_parcial_desc: 'Reforma de áreas molhadas',
+        sim_type_capoto: 'Fachada & Isolamento Capoto',
+        sim_type_capoto_desc: 'Isolamento térmico e janelas duplas',
+        sim_type_nova: 'Construção Nova do Zero',
+        sim_type_nova_desc: 'Casa pronta para morar (Chave na mão)',
+        sim_lbl_area: '2. Área Total da Reforma (m²):',
+        sim_lbl_acabamento: '3. Padrão de Acabamentos:',
+        sim_tier_std: 'Standard',
+        sim_tier_std_sub: 'Excelente para Aluguel',
+        sim_tier_prem: 'Premium Comfort',
+        sim_tier_prem_sub: 'Moradia Própria com Conforto',
+        sim_tier_lux: 'Luxo & Design',
+        sim_tier_lux_sub: 'Acabamentos Europeus de Luxo',
+        sim_lbl_local: '4. Região do Imóvel:',
+        sim_res_estimativa: 'Estimativa de Investimento',
+        sim_det_prazo: 'Prazo Médio Estimado:',
+        sim_det_preco_m2: 'Valor por m²:',
+        sim_det_enquadramento: 'Enquadramento IVA:',
+        sim_det_garantia: 'Garantia Técnica:',
+        sim_btn_proposta: 'Solicitar Proposta Formal',
+        sim_btn_whatsapp: 'Enviar Estimativa no WhatsApp',
+        sim_disclaimer: '* Valores de referência estimados, sujeitos a vistoria técnica gratuita no local e projeto executivo.',
+        portfolio_tag: 'Obras Concluídas',
+        portfolio_title: 'Projetos Realizados em Portugal',
+        portfolio_subtitle: 'Veja algumas reformas e construções entregues para investidores e famílias em Lisboa, Cascais, Porto e Algarve.',
+        port1_tag: 'Reforma Total Apartamento T3',
+        port1_title: 'Apartamento Histórico com Piso Original Restaurado',
+        port1_desc: 'Restauração do taco de madeira nobre, suíte master com banheira de imersão e janelas antirruído voltadas para a rua.',
+        port2_tag: 'Construção Chave na Mão',
+        port2_title: 'Casa Moderna com Fachada em Capoto Térmico',
+        port2_desc: 'Estrutura de concreto armado com arquitetura contemporânea. Isolamento térmico de ponta, placas solares e piscina privativa.',
+        port3_tag: 'Cozinha e Sala Integradas',
+        port3_title: 'Reforma com Vista Mar & Mármore Português',
+        port3_desc: 'Integração de ambientes, ilha gourmet em mármore Estremoz e sistema de ar-condicionado embutido no gesso.',
+        trust_tag: 'Segurança Jurídica & Técnica',
+        trust_title: 'Por que Contratar a Lusitana em Portugal?',
+        trust_subtitle: 'Construir ou reformar na Europa exige total segurança jurídica. Conheça as garantias que protegem o seu investimento.',
+        trust1_title: 'Licença Oficial IMPIC',
+        trust1_desc: 'Empresa habilitada com o Alvará N.º 98452-PAR pelo órgão oficial da construção em Portugal. Segurança contratual absoluta.',
+        trust2_title: 'Garantia de 10 Anos',
+        trust2_desc: 'Cumprimento estrito da legislação portuguesa: 10 anos de garantia para itens estruturais e 5 anos para acabamentos e instalações.',
+        trust3_title: 'Seguro de Responsabilidade Civil',
+        trust3_desc: 'Cobertura de 500.000 € contra danos a terceiros e seguro obrigatório para toda a equipe de operários da obra.',
+        trust4_title: 'Contrato Formal e Transparente',
+        trust4_desc: 'Cronograma detalhado físico e financeiro. Pagamentos vinculados à entrega real de cada etapa. Sem surpresas no orçamento.',
+        test_tag: 'Depoimentos Reais',
+        test_title: 'O que Dizem os Nossos Clientes',
+        test_subtitle: 'Experiências de investidores brasileiros e proprietários locais que confiaram suas obras à nossa equipe.',
+        test1_quote: '"Contratar uma obra em Lisboa estando em São Paulo gerava muita insegurança no início. A Lusitana foi impecável: entregou a reforma dentro do prazo com relatórios em vídeo semanais, cuidou de toda a burocracia do condomínio e as fotos 360° no portal permitiram acompanhar tudo sem sair do Brasil."',
+        test1_author: 'Marcelo & Beatriz Andrade',
+        test1_role: 'Investidores de São Paulo • Apto no Chiado, Lisboa',
+        test2_quote: '"Fizemos a reforma da nossa casa em Cascais com isolamento térmico em capoto e troca de toda a parte elétrica e hidráulica. O rigor com o orçamento e com o prazo foi exemplar. O conforto térmico no inverno mudou radicalmente."',
+        test2_author: 'Eng.º Miguel Carvalhal',
+        test2_role: 'Proprietário em Cascais • Moradia Unifamiliar',
+        test3_quote: '"Comunicação impecável em inglês desde o primeiro dia. Cuidaram de todas as licenças camarárias e da reforma completa da nossa villa no Algarve. Prazos e orçamentos respeitados à risca."',
+        test3_author: 'David & Sarah Jenkins',
+        test3_role: 'Proprietários de Londres • Villa de Luxo no Algarve',
+        faq_tag: 'Dúvidas Frequentes',
+        faq_title: 'Perguntas Frequentes sobre Reformas em Portugal',
+        faq_subtitle: 'Tire suas dúvidas sobre licenças na prefeitura, imposto reduzido de 6%, garantias e pagamentos.',
+        faq1_q: 'Preciso de autorização da Câmara Municipal para reformar o interior do meu imóvel?',
+        faq1_a: 'Geralmente não. Obras internas que não mexam na estrutura resistente do prédio (pilares, vigas ou paredes mestras) e não alterem a fachada são isentas de licença camarária pelo regime jurídico português. Quando a obra exige projeto estrutural, nossa equipe cuida de toda a aprovação técnica.',
+        faq2_q: 'Como funciona a taxa reduzida de IVA a 6% na Reabilitação Urbana (ARU)?',
+        faq2_a: 'Imóveis localizados em Zonas de Reabilitação Urbana (ARU) em Lisboa, Porto e Cascais contam com benefício legal de pagar apenas 6% de imposto sobre a mão-de-obra e reforma (em vez dos 23% convencionais). Nossa equipe providencia a certidão na câmara municipal para você economizar.',
+        faq3_q: 'Como acompanho o andamento da obra se estiver morando no Brasil?',
+        faq3_a: 'Oferecemos gestão remota completa. Um engenheiro responsável envia relatórios fotográficos e em vídeo semanais, cronograma atualizado e faz reuniões online periódicas com você.',
+        faq4_q: 'Quais são as formas de pagamento aceitas?',
+        faq4_a: 'Os pagamentos são sempre parcelados por marcos de entrega física concluídos. Aceitamos transferência bancária internacional (SEPA/SWIFT em Euros), MB WAY, boleto/Multibanco e cartões de crédito internacionais.',
+        faq5_q: 'Qual o tempo médio para reformar um apartamento de 2 ou 3 quartos (T2/T3)?',
+        faq5_a: 'Uma reforma total de um apartamento T2 (cerca de 85 m²) leva em média de 8 a 10 semanas. Um T3 de 120 m² leva de 10 a 14 semanas, dependendo do nível de customização dos móveis planejados.',
+        contact_tag: 'Inicie Sua Reforma',
+        contact_title: 'Agende uma Visita Técnica ou Reunião com a Engenharia',
+        contact_desc: 'Possui um imóvel para reformar ou terreno para construir em Portugal? Conte-nos sobre o seu projeto para elaborarmos um orçamento formal com prazos garantidos.',
+        contact_sede: 'Sede Central Lisboa',
+        contact_filial: 'Escritório Norte & Porto',
+        contact_atendimento: 'Linha Direta & WhatsApp',
+        contact_email_title: 'E-mail Comercial',
+        form_lbl_nome: 'Nome Completo *',
+        form_lbl_tel: 'Telefone / WhatsApp *',
+        form_lbl_email: 'E-mail *',
+        form_lbl_concelho: 'Região do Imóvel em Portugal *',
+        form_lbl_tipo_obra: 'Tipo de Imóvel e Reforma *',
+        form_lbl_mensagem: 'Descrição do Projeto / Metragem Estimada',
+        form_btn_enviar: 'Solicitar Orçamento Gratuito',
+        ftr_bio: 'Empresa de engenharia civil, reformas de alto padrão e reabilitação de imóveis em Portugal. Alvará IMPIC N.º 98452-PAR. Garantia legal de obra, rigor técnico e excelência em acabamentos.',
+        ftr_servicos_title: 'Serviços',
+        ftr_regioes_title: 'Regiões Atendidas',
+        ftr_contacto_title: 'Contato & Suporte',
+        ftr_horario: 'Segunda a Sexta: 08:30 às 18:30 (Horário de Portugal)',
+        ftr_disclaimer: "Publicado soberanamente via Sophia Editorial & GitHub Pages ('hodrichtech')."
+      },
+
+      'en': {
+        brand_slogan: 'Construction & Renovation in Portugal',
+        ribbon_alvara: 'IMPIC Construction License No. 98452-PAR',
+        ribbon_seguro: 'Third-Party Liability Insurance €500,000',
+        ribbon_garantia: '10-Year Structural Legal Warranty (DL 84/2021)',
+        nav_servicos: 'Services',
+        nav_reabilitacao: 'Historic & ARU',
+        nav_simulador: 'Cost Simulator',
+        nav_portfolio: 'Portfolio',
+        nav_garantias: 'Licenses & Warranty',
+        nav_faq: 'FAQ',
+        nav_contacto: 'Contact Us',
+        btn_orcamento_header: 'Get a Quote',
+        hero_badge: '🇵🇹 Certified General Contractor • Turnkey Construction in Portugal',
+        hero_title_p1: 'High-End Home Renovations &',
+        hero_title_highlight: 'Turnkey Civil Construction',
+        hero_title_p2: 'in Portugal',
+        hero_subtitle: 'Transforming apartments, luxury villas, and historic buildings across Lisbon, Porto, Cascais, and the Algarve. Full turnkey management, municipal planning compliance, and rigorous on-time delivery.',
+        hero_cta_simular: 'Calculate Project Cost',
+        hero_cta_whatsapp: 'Chat with an Engineer on WhatsApp',
+        metric_obras: 'Completed Projects',
+        metric_prazos: 'On-Time Delivery',
+        metric_garantia: 'Structural Warranty',
+        metric_iva: 'Reduced 6% VAT in ARU',
+        servicos_tag: 'Technical Expertise',
+        servicos_title: 'Full-Scope Architectural & Engineering Services',
+        servicos_subtitle: 'In-house multidisciplinary teams across Lisbon, Porto, Cascais, and the Algarve. From initial strip-out to bespoke luxury finishes under certified supervision.',
+        badge_alta_procura: 'Most Popular',
+        badge_iva_6: '6% VAT Rate',
+        badge_classe_a: 'A+ Efficiency',
+        badge_turnkey: '100% Turnkey',
+        badge_investidores: 'For Non-Residents',
+        svc1_title: 'Full Interior Remodeling',
+        svc1_desc: 'Contemporary bathrooms, custom bespoke kitchens with islands, brand-new multilayer plumbing, certified electrical installations, and acoustic premium flooring.',
+        svc1_b1: 'Luxury Bathrooms & Wall-Hung Fixtures',
+        svc1_b2: 'Custom Italian/German Style Fitted Kitchens',
+        svc1_b3: 'Architectural LED Lighting & False Ceilings',
+        svc2_title: 'Historic Building Restoration (ARU)',
+        svc2_desc: 'Restoration of historic heritage properties in Lisbon and Porto. Façade conservation, traditional Portuguese tiles, timber structural reinforcement, and 6% reduced VAT eligibility.',
+        svc2_b1: 'ARU Tax Incentive (6% Reduced VAT)',
+        svc2_b2: 'Seismic & Timber Structural Reinforcement',
+        svc2_b3: 'Strict Architectural Heritage Compliance',
+        svc3_title: 'Thermal Insulation & ETICS (Capoto)',
+        svc3_desc: 'External thermal insulation systems (ETICS/Capoto), thermal-break PVC/aluminum double-glazed acoustic windows. Elimination of damp, condensation, and heat loss.',
+        svc3_b1: 'ETICS Insulation 60mm to 100mm Rockwool/EPS',
+        svc3_b2: 'Up to 60% Reduction in Heating/Cooling Bills',
+        svc3_b3: 'Comprehensive Anti-Damp Warranty',
+        svc4_title: 'Turnkey Villa Construction',
+        svc4_desc: 'From architectural drawings and municipal council planning permits to reinforced concrete shell and turnkey handover in Cascais, Sintra, Oeiras, and the Algarve.',
+        svc4_b1: 'Architectural & Engineering Drawings',
+        svc4_b2: 'City Hall Planning Permits & Licensing',
+        svc4_b3: 'Infinity Pool, Landscaping & Smart Home Automation',
+        svc5_title: 'Waterproofing & Roof Restoration',
+        svc5_desc: 'Flat terrace waterproofing with liquid polyurethane membranes, traditional pitched roof repairs, and high-performance weather-resistant exterior painting.',
+        svc5_b1: 'Flood Testing with Written Warranty',
+        svc5_b2: 'Anti-Mold & Hydrophobic Premium Coatings',
+        svc5_b3: 'Crack Repair & Façade Pressure Washing',
+        svc6_title: 'Remote Project Management for Investors',
+        svc6_desc: 'Tailored for overseas homeowners and Golden Visa investors. Weekly video reports, 360° virtual tours, transparent accounting, and milestones tracking.',
+        svc6_b1: 'Weekly Video Walkthroughs & 360° Imagery',
+        svc6_b2: 'Trilingual Team (English, Portuguese)',
+        svc6_b3: 'Milestone-Based Escrow-Style Payments',
+        btn_simular_servico: 'Estimate This Service',
+        btn_saber_mais: 'Learn More About 6% VAT',
+        btn_falar_consultor: 'Talk to an Advisor',
+        aru_title: 'Tax Benefit: Reduced 6% VAT on Urban Rehabilitation',
+        aru_desc: 'Did you know that in Portugal, home renovations located within designated Urban Rehabilitation Zones (ARU) in Lisbon, Porto, Cascais, and Sintra qualify for a reduced 6% VAT rate (instead of the standard 23%)? We handle all municipal paperwork to guarantee your tax savings.',
+        aru_taxa_sub: 'Reduced VAT Rate',
+        sim_tag: 'Transparent Pricing',
+        sim_title: 'Portugal Renovation Cost Calculator',
+        sim_subtitle: 'Get an instant, reliable cost estimate for your construction or remodeling project based on current 2026 Portuguese building rates.',
+        sim_lbl_tipo: '1. Project Scope:',
+        sim_type_total: 'Full Remodeling',
+        sim_type_total_desc: 'Complete apartment or house overhaul',
+        sim_type_parcial: 'Kitchen & Bathrooms',
+        sim_type_parcial_desc: 'Wet areas & priority rooms',
+        sim_type_capoto: 'Façade & Insulation (ETICS)',
+        sim_type_capoto_desc: 'External thermal insulation & windows',
+        sim_type_nova: 'New Ground-Up Build',
+        sim_type_nova_desc: 'Turnkey bespoke custom villa',
+        sim_lbl_area: '2. Gross Floor Area (sqm):',
+        sim_lbl_acabamento: '3. Finish Standard:',
+        sim_tier_std: 'Standard',
+        sim_tier_std_sub: 'Rental Investment Quality',
+        sim_tier_prem: 'Premium Comfort',
+        sim_tier_prem_sub: 'High-End Family Residence',
+        sim_tier_lux: 'Luxury & Design',
+        sim_tier_lux_sub: 'Architectural European Bespoke',
+        sim_lbl_local: '4. Project Location:',
+        sim_res_estimativa: 'Estimated Budget Range',
+        sim_det_prazo: 'Estimated Duration:',
+        sim_det_preco_m2: 'Rate per sqm:',
+        sim_det_enquadramento: 'VAT Framework:',
+        sim_det_garantia: 'Technical Warranty:',
+        sim_btn_proposta: 'Request Formal Fixed-Price Quote',
+        sim_btn_whatsapp: 'Send Estimate via WhatsApp',
+        sim_disclaimer: '* Reference figures for planning purposes. Final contract subject to free site inspection and bill of quantities.',
+        portfolio_tag: 'Featured Work',
+        portfolio_title: 'Completed Projects Across Portugal',
+        portfolio_subtitle: 'Explore a selection of our recent turnkey residential renovations in Lisbon, Cascais, Porto, and the Algarve.',
+        port1_tag: 'Full 3-Bed Renovation',
+        port1_title: 'Historic Apartment with Restored Pine Floorboards',
+        port1_desc: 'Carefully restored historic Baltic pine floors, master suite with freestanding soaking tub, and acoustic-grade double glazing facing the street.',
+        port2_tag: 'Turnkey Villa Construction',
+        port2_title: 'Contemporary Villa with External Insulation Façade',
+        port2_desc: 'Reinforced concrete structure with minimalist architecture. 80mm ETICS insulation with A+ Energy Certification, solar arrays, and infinity pool.',
+        port3_tag: 'Open-Plan Kitchen & Living',
+        port3_title: 'Ocean-View Remodel with Portuguese Estremoz Marble',
+        port3_desc: 'Wall removal to create an expansive, light-filled open concept, waterfall island in Portuguese Estremoz marble, and ducted HVAC system.',
+        trust_tag: 'Legal & Engineering Integrity',
+        trust_title: 'Why Choose Lusitana in Portugal?',
+        trust_subtitle: 'Renovating in Europe requires strict legal compliance. Here is how our certified credentials safeguard your investment.',
+        trust1_title: 'IMPIC General Contractor License',
+        trust1_desc: 'Holder of Official Contractor License No. 98452-PAR issued by the Institute of Public Real Estate and Construction Markets. Fully licensed for private and commercial works.',
+        trust2_title: '10-Year Statutory Warranty',
+        trust2_desc: 'Full compliance with Portuguese Decree-Law No. 84/2021: 10 years of statutory warranty for structural elements and 5 years for fixtures and finishes.',
+        trust3_title: 'Third-Party Liability Insurance',
+        trust3_desc: 'Comprehensive €500,000 indemnity policy plus mandatory worker workplace accident coverage for 100% of staff on site.',
+        trust4_title: 'Legally Binding Fixed Contract',
+        trust4_desc: 'Detailed milestone schedule with bill of quantities. Staged payments strictly tied to completed and verified milestones. No hidden fees or budget overruns.',
+        test_tag: 'Client Reviews',
+        test_title: 'What Homeowners & Investors Say',
+        test_subtitle: 'Hear directly from international buyers and Portuguese homeowners who partnered with our engineering team.',
+        test1_quote: '"Managing an extensive renovation in Lisbon while based in São Paulo felt daunting at first. Lusitana was exceptional: delivered on schedule with weekly video updates, handled building permits, and the 360° portal allowed seamless remote oversight."',
+        test1_author: 'Marcelo & Beatriz Andrade',
+        test1_role: 'Investors from São Paulo • 3-Bed in Chiado, Lisbon',
+        test2_quote: '"We completed a total overhaul of our family home in Cascais with external insulation and complete replumbing. Their commitment to the agreed budget and handover date was exemplary. Winter thermal comfort improved drastically."',
+        test2_author: 'Miguel Carvalhal, P.Eng.',
+        test2_role: 'Homeowner in Cascais • Detached Villa',
+        test3_quote: '"Outstanding communication in English from day one. They handled municipal planning permissions and the turnkey villa renovation in Quinta do Lago flawlessly. The high-end finishes, stone masonry, and project timeline were fully respected. Truly a top-tier construction firm in Portugal."',
+        test3_author: 'David & Sarah Jenkins',
+        test3_role: 'Homeowners from London • Luxury Villa, Algarve',
+        faq_tag: 'FAQ',
+        faq_title: 'Frequently Asked Questions about Building in Portugal',
+        faq_subtitle: 'Everything you need to know about council permits, 6% VAT rates, warranties, and international payment methods.',
+        faq1_q: 'Do I need a city hall permit to renovate the interior of my apartment?',
+        faq1_a: 'Generally no. Internal works that do not alter the load-bearing structure of the building (columns, beams, or shear walls) and do not modify the exterior façade are legally exempt from municipal prior control under the RJUE framework. When structural changes are needed, our engineers submit and manage the planning application.',
+        faq2_q: 'How does the reduced 6% VAT rate work in Urban Rehabilitation Zones (ARU)?',
+        faq2_a: 'Under Item 2.23 of List I annexed to the Portuguese VAT Code, contracts for the renovation of properties located in designated ARU zones benefit from a reduced VAT rate of 6% (or 4%/5% in Madeira and the Azores). We obtain the official municipal ARU certificate and apply the reduced rate directly to invoices.',
+        faq3_q: 'How do I monitor project progress if I live abroad?',
+        faq3_a: 'We offer an end-to-end remote management service. You will have a dedicated English-speaking Project Manager who sends weekly video walk-throughs, high-resolution photo logs, milestone trackers, and schedules regular video conference check-ins.',
+        faq4_q: 'What payment terms and payment methods are accepted?',
+        faq4_a: 'Payments are strictly milestone-based (e.g. 25% mobilization deposit, 25% upon strip-out & technical rough-ins, 25% drylining & tiling, 15% finishes & painting, and 10% upon final punch-list handover). We accept SEPA Euro wire transfers, MB WAY, Multibanco, and international credit cards.',
+        faq5_q: 'What is the average timeline for renovating a 2 or 3-bedroom apartment?',
+        faq5_a: 'A complete interior renovation of a 2-bedroom apartment (~85 sqm) takes on average 8 to 10 weeks of active work. A larger 3-bedroom apartment (~130 sqm) typically takes 10 to 14 weeks depending on customized joinery and screed curing times.',
+        contact_tag: 'Start Your Project',
+        contact_title: 'Book a Technical Site Survey or Engineering Consultation',
+        contact_desc: 'Have a property to renovate or land to build in Portugal? Tell us about your vision to receive an itemized bill of quantities with fixed prices and guaranteed delivery dates.',
+        contact_sede: 'Lisbon Headquarters',
+        contact_filial: 'Porto Northern Office',
+        contact_atendimento: 'Direct Line & WhatsApp',
+        contact_email_title: 'Email Inquiries',
+        form_lbl_nome: 'Full Name *',
+        form_lbl_tel: 'Phone / WhatsApp *',
+        form_lbl_email: 'Email Address *',
+        form_lbl_concelho: 'Property Municipality / Region *',
+        form_lbl_tipo_obra: 'Property & Intervention Type *',
+        form_lbl_mensagem: 'Project Brief / Estimated Floor Area',
+        form_btn_enviar: 'Submit Free Quote Request',
+        ftr_bio: 'Certified civil engineering, luxury home remodeling, and historic building restoration contractor in Portugal. Official IMPIC License No. 98452-PAR. 10-year structural warranty and European craftsmanship.',
+        ftr_servicos_title: 'Services',
+        ftr_regioes_title: 'Regions Covered',
+        ftr_contacto_title: 'Contact & Support',
+        ftr_horario: 'Monday to Friday: 08:30 to 18:30 (GMT/WET)',
+        ftr_disclaimer: "Published sovereignly via Sophia Editorial & GitHub Pages ('hodrichtech')."
+      }
+    };
+
+    // Current language state (defaults to pt-PT or saved preference)
+    let currentLang = localStorage.getItem('lusitana_lang') || 'pt-PT';
+
+    function setLanguage(lang) {
+      if (!TRANSLATIONS[lang]) lang = 'pt-PT';
+      currentLang = lang;
+      localStorage.setItem('lusitana_lang', lang);
+
+      // Update button active state
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+
+      // Update HTML lang attribute
+      document.documentElement.lang = lang;
+
+      // Update all translated strings on page
+      const dict = TRANSLATIONS[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.innerHTML = dict[key];
+        }
+      });
+
+      // Re-calculate simulator output with new language
+      calculateSimulator();
+    }
+
+    // Simulator State & Logic
+    let simState = {
+      type: 'total',       // 'total', 'parcial', 'capoto', 'nova'
+      area: 95,            // m²
+      tier: 'premium',     // 'standard', 'premium', 'luxo'
+      location: 'lisboa'   // 'lisboa', 'porto', 'algarve', 'centro'
+    };
+
+    const BASE_RATES = {
+      'total':   { min: 460, max: 620, stdMult: 0.85, premMult: 1.0, luxMult: 1.35, weeksPer100: 9 },
+      'parcial': { min: 580, max: 850, stdMult: 0.85, premMult: 1.0, luxMult: 1.40, weeksPer100: 6 },
+      'capoto':  { min: 230, max: 380, stdMult: 0.88, premMult: 1.0, luxMult: 1.30, weeksPer100: 5 },
+      'nova':    { min: 1100, max: 1650, stdMult: 0.88, premMult: 1.0, luxMult: 1.45, weeksPer100: 24 }
+    };
+
+    const LOCATION_MULTIPLIERS = {
+      'lisboa': 1.05,
+      'porto': 0.98,
+      'algarve': 1.08,
+      'centro': 0.92
+    };
+
+    function selectSimType(type) {
+      simState.type = type;
+      document.querySelectorAll('[data-type]').forEach(el => {
+        el.classList.toggle('active', el.getAttribute('data-type') === type);
+      });
+      calculateSimulator();
+    }
+
+    function selectSimTier(tier) {
+      simState.tier = tier;
+      document.querySelectorAll('[data-tier]').forEach(el => {
+        el.classList.toggle('active', el.getAttribute('data-tier') === tier);
+      });
+      calculateSimulator();
+    }
+
+    function updateSimArea(val) {
+      simState.area = parseInt(val, 10) || 20;
+      document.getElementById('sim-area-display').textContent = simState.area + ' m²';
+      calculateSimulator();
+    }
+
+    function calculateSimulator() {
+      const locSelect = document.getElementById('sim-location-select');
+      simState.location = locSelect ? locSelect.value : 'lisboa';
+
+      const rates = BASE_RATES[simState.type] || BASE_RATES['total'];
+      const locMult = LOCATION_MULTIPLIERS[simState.location] || 1.0;
+
+      let tierMult = rates.premMult;
+      if (simState.tier === 'standard') tierMult = rates.stdMult;
+      if (simState.tier === 'luxo') tierMult = rates.luxMult;
+
+      const minM2 = Math.round(rates.min * tierMult * locMult);
+      const maxM2 = Math.round(rates.max * tierMult * locMult);
+
+      const totalMin = Math.round(minM2 * simState.area);
+      const totalMax = Math.round(maxM2 * simState.area);
+
+      // Duration estimation
+      const baseWeeks = Math.round((simState.area / 100) * rates.weeksPer100);
+      const minWeeks = Math.max(3, baseWeeks - 2);
+      const maxWeeks = Math.max(minWeeks + 2, baseWeeks + 3);
+
+      // Format currency
+      const formattedMin = totalMin.toLocaleString('pt-PT');
+      const formattedMax = totalMax.toLocaleString('pt-PT');
+      document.getElementById('sim-price-range').innerHTML = `${formattedMin} € &mdash; ${formattedMax} €`;
+
+      // Format details
+      let prazoUnit = 'semanas';
+      let prazoLabel = `${minWeeks} a ${maxWeeks} ${prazoUnit}`;
+      if (currentLang === 'en') {
+        prazoUnit = 'weeks';
+        if (minWeeks > 35) {
+          prazoLabel = `${Math.round(minWeeks/4)} to ${Math.round(maxWeeks/4)} months`;
+        } else {
+          prazoLabel = `${minWeeks} to ${maxWeeks} weeks`;
+        }
+      } else if (minWeeks > 35) {
+        prazoLabel = `${Math.round(minWeeks/4)} a ${Math.round(maxWeeks/4)} meses`;
+      }
+
+      document.getElementById('sim-prazo').textContent = prazoLabel;
+      document.getElementById('sim-preco-m2').textContent = `${minM2} € a ${maxM2} € / m²`;
+
+      // WhatsApp share message
+      const typeLabel = simState.type.toUpperCase();
+      const tierLabel = simState.tier.toUpperCase();
+      const waMsg = encodeURIComponent(
+        `Olá! Calculei no simulador da Lusitana:\n` +
+        `- Tipo: ${typeLabel}\n` +
+        `- Área: ${simState.area} m²\n` +
+        `- Padrão: ${tierLabel}\n` +
+        `- Região: ${simState.location.toUpperCase()}\n` +
+        `- Estimativa: ${formattedMin} € a ${formattedMax} €\n` +
+        `Gostaria de agendar uma visita técnica gratuita para o meu imóvel.`
+      );
+      document.getElementById('sim-whatsapp-share').href = `https://wa.me/+351912345678?text=${waMsg}`;
+    }
+
+    function toggleFaq(el) {
+      const item = el.closest('.faq-item');
+      if (item) {
+        item.classList.toggle('open');
+      }
+    }
+
+    function toggleMobileMenu() {
+      const nav = document.querySelector('.nav-links');
+      if (nav) {
+        if (nav.style.display === 'flex') {
+          nav.style.display = 'none';
+        } else {
+          nav.style.display = 'flex';
+          nav.style.flexDirection = 'column';
+          nav.style.position = 'absolute';
+          nav.style.top = '100%';
+          nav.style.left = '0';
+          nav.style.right = '0';
+          nav.style.background = '#070a12';
+          nav.style.padding = '20px';
+          nav.style.borderBottom = '1px solid var(--border-color)';
+        }
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const nome = document.getElementById('form-nome').value.trim();
+      const tel = document.getElementById('form-whatsapp').value.trim();
+      const concelho = document.getElementById('form-cidade').value;
+      const tipo = document.getElementById('form-tipo-obra').value;
+      const msg = document.getElementById('form-mensagem').value.trim();
+
+      const thankYouMsg = currentLang === 'en' 
+        ? `Thank you, ${nome}! Your quote request has been received. Our engineering team will contact you at ${tel} within 24 hours.`
+        : `Obrigado, ${nome}! O seu pedido de orçamento foi submetido com sucesso. A nossa equipa de engenharia entrará em contacto pelo número ${tel} num prazo máximo de 24 horas úteis.`;
+
+      alert(thankYouMsg);
+
+      // Open WhatsApp pre-filled with the inquiry details
+      const waText = encodeURIComponent(
+        `Olá, Lusitana! Enviei meu pedido de orçamento pelo site:\n` +
+        `- Nome: ${nome}\n` +
+        `- Contato: ${tel}\n` +
+        `- Localidade: ${concelho}\n` +
+        `- Tipo: ${tipo}\n` +
+        `- Detalhes: ${msg}`
+      );
+      window.open(`https://wa.me/+351912345678?text=${waText}`, '_blank');
+      e.target.reset();
+    }
+
+    // Initialize on load
+    window.addEventListener('DOMContentLoaded', () => {
+      setLanguage(currentLang);
+      calculateSimulator();
+    });
+  </script>
+</body>
+</html>
